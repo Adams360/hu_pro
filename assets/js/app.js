@@ -1,15 +1,17 @@
 // Nav Hamburger Button
 const hamburger = document.querySelector('.hamburger');
 const navMenu   = document.querySelector('.nav__menu');
+const navBar    = document.querySelector('.nav');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('is-active');
     navMenu.classList.toggle('is-active');
+    navBar.classList.toggle('scrolled');
 });
 
 // Nav Transparent on scroll
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-const navBar    = document.querySelector('.nav');
+
 
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {

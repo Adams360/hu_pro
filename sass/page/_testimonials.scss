@@ -42,6 +42,9 @@
     }
     &__text {
         padding: 2rem 0;
+        @include respond(md) {
+            font-size: 2.2rem;
+        }
         &::before {
             content: "";
             width: 8rem;
@@ -60,6 +63,9 @@
         justify-content: center;
         p {
             padding: 0 .9rem;
+            @include respond(md) {
+                font-size: 1.8rem;
+            }
             &:not(:first-child) {
                 border-left: 2px solid var(--color-7);
             }
