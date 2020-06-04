@@ -19,10 +19,13 @@
     &__logo-box {
         flex: 1 1 15%;
         padding: 2rem;
-
         display: flex;
         justify-content: center;
         align-items: center;
+        @include respond(md) {
+        flex: 0 0 25%;
+
+        }
     }
 
     &__logo {

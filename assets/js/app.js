@@ -2,13 +2,26 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu   = document.querySelector('.nav__menu');
 
-const navItem   = document.querySelectorAll('.nav__item');
-
-
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('is-active');
     navMenu.classList.toggle('is-active');
 });
+
+// Nav Transparent on scroll
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+const navBar    = document.querySelector('.nav');
+
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    navBar.classList.add('scrolled');
+  } else {
+    navBar.classList.remove('scrolled');
+  }
+}
+
+
+
 
 
 

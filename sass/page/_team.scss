@@ -16,8 +16,8 @@
     max-width: 85%;
     min-height: 60rem;
     margin: 0 auto;
-    @media screen and (max-width: 768px) {
-        display: none;
+ @include respond(lg) {
+     display: none;
     }
 }
 
@@ -31,9 +31,14 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-
+    margin: 0 2rem;
         min-height: 45rem;
         max-width: 50rem;
+
+        @include respond(xl) {
+            padding: 0 4rem;
+        }
+   
         color: var(--color-7);
         font-family: $font-secondary;
 
@@ -68,7 +73,7 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            color: var(--color-3);
+            color: var(--color-7);
             border-bottom: 3px solid currentColor;
             cursor: pointer;
             padding: 1rem;
@@ -79,6 +84,7 @@
             }
 
             &:hover {
+                color: var(--color-3);
                 svg {
                     transform: translateY(-1.5rem);
                 }
@@ -109,82 +115,12 @@
             }
         }
 
-        
-
-        
         .swiper-wrapper {
             overflow-y: visible;
 
         }
-        @media screen and (max-width: 768px) {
-            display: block;
+     @include respond(lg) {
+         display: block;
+
         }
     }
-
-
-    // .card {
-    //     position: relative;
-    //     border: 2px solid lime;
-    //     width: 50rem;
-    //     background-color: var(--color-light);
-
-    //     padding: 6rem; 
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     min-height: 45rem;
-    //     align-items: center;
-    //     color: var(--color-7);
-    //     font-family: $font-secondary;
-
-    //     &__img {
-    //         max-width: 20rem;
-    //         width: 100%;
-    //         position: absolute;
-    //         top: 0;
-    //         left: 50%;
-    //         transform: translate(-50%, -50%);
-    //     }
-    //     .title {
-    //         font-size: 2rem;
-    //         text-transform: capitalize;
-    //         font-weight: 900;
-
-    //     }
-    //     .sub-title {
-    //         font-size: 2rem;
-    //         text-transform: uppercase;
-    //         font-weight: 700;
-
-    //     }
-    //     .description {
-    //         margin-top: 3rem;
-    //         font-size: 1.6rem;
-    //         color: var(--color-dark);
-    //     }
-
-
-    //     &__icon {
-    //         position: absolute;
-    //         bottom: 0;
-    //         color: var(--color-3);
-    //         border-bottom: 3px solid currentColor;
-    //         cursor: pointer;
-    //         padding: 1rem;
-
-    //         svg {
-    //             width: 3rem;
-    //             height: 3rem;
-    //             transition: transform .3s ease-in-out;
-    //         }
-
-    //         &:hover {
-    //             color: var(--color-4);
-    //             svg {
-    //                 transform: translateY(-2rem);
-    //             }
-
-                    
-    //         }
-    //     }
-    // }

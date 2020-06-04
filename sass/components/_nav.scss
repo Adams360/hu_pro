@@ -10,12 +10,26 @@
     width: 100%;
     z-index: 500;
     background: rgba(#fff, .9);
+    transition: all .4s ease-out;
+
+    &.scrolled {
+    background: rgba(#fff, 1);
+
+    .nav__logo {
+        img {
+            transform: scale(.9);
+        }
+
+    }
+        
+    }
 
     &__logo {
     z-index: 700;
 
         img {
-            min-width: 15rem;
+            transition: transform .2s ease-out;
+            max-width: 15rem;
             width: 100%;
             height: auto;
         }
