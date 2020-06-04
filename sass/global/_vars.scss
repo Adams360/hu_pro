@@ -1,0 +1,27 @@
+:root {
+    // Colors
+    --color-1: #001741;
+    --color-2: #0069BB;
+    --color-3: #00F1DC;
+    --color-4: #F05D43;
+    
+    --color-5: #200B30;
+    --color-6: #672B94;
+    --color-7: #001741;
+
+    --color-light: #fff;
+    --color-dark: #000;
+    --color-gray: #eee;
+    --color-gray-dark: #bbb;
+    // Utilities
+    --partners-height: 15rem;
+    @include respond(md) {
+        --partners-height: 25rem;
+    }
+}
+
+// Fonts
+$font-primary: 'IBM Plex Sans', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+
+

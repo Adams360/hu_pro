@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_250" data-name="Rectangle 250" width="60" height="60" transform="translate(-385.597 576.153)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_975" data-name="Group 975" transform="translate(385.597 -576.153)">
+    <g id="Group_978" data-name="Group 978" clip-path="url(#clip-path)">
+      <g id="Group_977" data-name="Group 977">
+        <g id="Group_976" data-name="Group 976">
+          <path id="Path_311" data-name="Path 311" d="M-361.49,627.8v2.572H-384.2V584.622A1.622,1.622,0,0,1-382.582,583h19.47a1.622,1.622,0,0,1,1.622,1.622v1.005" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_1091" data-name="Line 1091" x1="0.649" transform="translate(-375.767 624.535)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_1092" data-name="Line 1092" x1="0.649" transform="translate(-379.661 624.535)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_1093" data-name="Line 1093" x2="3.241" transform="translate(-379.661 599.559)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_1094" data-name="Line 1094" x2="4.528" transform="translate(-379.661 596.147)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_1095" data-name="Line 1095" x2="6.159" transform="translate(-379.661 592.736)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_1096" data-name="Line 1096" x2="11.024" transform="translate(-379.661 589.325)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+        <g id="Group_629" data-name="Group 629">
+          <line id="Line_773" data-name="Line 773" x2="2.646" transform="translate(-351.352 622.616)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_774" data-name="Line 774" y1="5.199" x2="0.481" transform="translate(-354.484 625.431)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_775" data-name="Line 775" x2="0.481" y2="5.199" transform="translate(-346.056 625.431)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_776" data-name="Line 776" x2="18.046" transform="translate(-359.053 630.631)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_777" data-name="Line 777" x1="3.936" y1="3.936" transform="translate(-334.046 596.687)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_778" data-name="Line 778" x1="3.69" y1="3.69" transform="translate(-337.792 596.971)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_779" data-name="Line 779" x1="3.69" y1="3.69" transform="translate(-334.103 600.661)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <g id="Group_627" data-name="Group 627">
+            <rect id="Rectangle_176" data-name="Rectangle 176" width="46.078" height="32.204" rx="6.266" transform="translate(-373.068 593.045)" stroke-width="1.5" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <line id="Line_780" data-name="Line 780" x2="46.078" transform="translate(-373.068 619.872)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

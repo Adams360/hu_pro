@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>HackerU Pro</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__logo">
+            <img src="./assets/img/nav/logo.svg" alt="HackerU Logo">
+        </div>
+        <ul class="nav__menu">
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Courses</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact Us</a></li>
+        </ul>
+        <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+    </nav>
+
+    <!-- Header Section START -->
+    <header class="header" id="home">
+
+        <span class="sticker">
+            <p> All Our Courses Now Also <strong>LIVE</strong> </p>
+        </span>
+
+        <div class="slides">
+            <div class="slide slide--1 fade">
+                    <div class="slide__text">
+                        <h2>Invest in your<br>human capital</h2>
+                        <p>to increase employees'<br>satisfaction and performance</p>
+                    </div>
+            </div>
+
+            <div class="slide slide--2 fade">
+                    <div class="slide__text">
+                        <h2> Industry leading<br>instructors </h2>
+                        <p> with vast hands-on experience</p>
+                    </div>
+            </div>
+
+            <div class="slide slide--3 fade">
+                    <div class="slide__text">
+                        <h2> Tailor-made<br>Course </h2>
+                        <p> to customize your<br>company's specific needs</p>
+                    </div>
+            </div>
+            <div class="slide slide--3 fade">
+                    <div class="slide__text">
+                        <h2> Python<br>Course </h2>
+                        <p> to customize your<br>company's specific needs</p>
+                    </div>
+            </div>
+
+            <div class="slide__dots">
+                <span onclick="currentSlide(1)" class="dot dot--active"></span>
+                <span onclick="currentSlide(2)" class="dot"></span>
+                <span onclick="currentSlide(3)" class="dot"></span>
+                <span onclick="currentSlide(4)" class="dot"></span>
+            </div>
+
+        </div>
+    </header>
+    <!-- Header Section END -->
+
+
+    <!-- Partners Section START -->
+    <section class="partners">
+        <div class="partners__container">
+            <img src="./assets/img/partners/partners-1.svg" alt="">
+            <img src="./assets/img/partners/partners-2.svg" alt="">
+            <img src="./assets/img/partners/partners-3.svg" alt="">
+            <img src="./assets/img/partners/partners-4.svg" alt="">
+            <img src="./assets/img/partners/partners-5.svg" alt="">
+            <img src="./assets/img/partners/partners-6.svg" alt="">
+        </div>
+    </section>
+    <!-- Partners Section END -->
+
+    <!-- Experties Section START -->
+    <section class="experties">
+        <h2 class="heading"> Areas of Experties </h2>
+
+        <div class="icons">
+
+            <figure class="icons__box">
+                <img class="icons__icon" src="./assets/img/experties/devops-icon.svg" alt="">
+                <figcaption class="icons__text">Agile & Devops</figcaption>
+            </figure>
+
+            <figure class="icons__box">
+                <img class="icons__icon" src="./assets/img/experties/frontend-icon.svg" alt="">
+                <figcaption class="icons__text">Front-End Technologies</figcaption>
+            </figure>
+            <figure class="icons__box">
+                <img class="icons__icon" src="./assets/img/experties/backend-icon.svg" alt="">
+                <figcaption class="icons__text">Back-End Development</figcaption>
+            </figure>
+            <figure class="icons__box">
+                <img class="icons__icon" src="./assets/img/experties/cyber-icon.svg" alt="">
+                <figcaption class="icons__text">Cyber Security</figcaption>
+            </figure>
+            <figure class="icons__box">
+                <img class="icons__icon" src="./assets/img/experties/qa-icon.svg" alt="">
+                <figcaption class="icons__text">QA & Testing</figcaption>
+            </figure>
+            <figure class="icons__box">
+                <img class="icons__icon" src="./assets/img/experties/cloud-icon.svg" alt="">
+                <figcaption class="icons__text">Cloud Computing</figcaption>
+            </figure>
+            <figure class="icons__box">
+                <img class="icons__icon" src="./assets/img/experties/data-icon.svg" alt="">
+                <figcaption class="icons__text">Data Management</figcaption>
+            </figure>
+
+            <figure class="icons__box">
+                <img class="icons__icon" src="./assets/img/experties/it-icon.svg" alt="">
+                <figcaption class="icons__text">Data Management</figcaption>
+            </figure>
+        </div>
+    </section>
+    <!-- Experties Section END -->
+
+
+        <!-- About Section START -->
+        <section class="about">
+            <div class="about__top">
+                <img class="about__img" src="./assets/img/about/img-about.png" alt="">
+                <img class="about__img--mobile" src="./assets/img/about/img-about-mobile.png" alt="">
+                <div class="about__content">
+                    <h2 class="heading">About Us</h2>
+                    <p class="para para--about">
+                        <strong>HackerU Pro</strong> aim to lead the global B2B market, in technology & cyber security
+                        training. HackerU Pro is a subsidiary of HackerU - a World-Renowned Provider of Technology
+                        Education, Cybersecurity Services, and High-Caliber Knowledge Transfer.
+                        <br>
+                        <br>
+                        We offer professional enrichment courses, on-site & online custom training, seminars and events on a
+                        wide array of relevant technologies for individuals and companies seeking to upgrade their skills.
+                        <br>
+                        <br>
+                        Our dedicated, talented instructors are industry leaders in their respective fields and their vast
+                        hands-on experience allow them to take your team to next professional level.
+                        <br>
+                        <br>
+                        HackerU Pro world-wide experience with a variety of B2B clients have made us Experts in Tailor-Made
+                        Technology & Cyber Security Training
+                    </p>
+                </div>
+            </div>
+            <div class="about__bottom">
+                <p class="para para--lg">
+                    HackerU Pro world-wide experience with a variety of B2B clients have made us Experts in
+                    <strong>Tailor-Made Technology & Cyber Security Training.</strong>
+                </p>
+            </div>
+        </section>
+        <!-- About Section END -->
+
+        <!-- Customers Section START -->
+        <section class="customers">
+            <div class="container">
+
+            <h2 class="heading">
+                among our customers
+            </h2>
+            
+            <div class="customers__logos">
+                <div class="customers__logo-box">
+                    <img class="customers__logo" src="./assets/img/customers/AT&T.svg" alt="">
+                </div>
+                <div class="customers__logo-box">
+                    <img class="customers__logo" src="./assets/img/customers/AudioCodes.svg" alt="">
+                </div>
+                <div class="customers__logo-box">
+                    <img class="customers__logo" src="./assets/img/customers/Cellebrite.svg" alt="">
+                </div>
+                <div class="customers__logo-box">
+                    <img class="customers__logo" src="./assets/img/customers/Intel.svg" alt="">
+                </div>
+                <div class="customers__logo-box">
+                    <img class="customers__logo" src="./assets/img/customers/kpmg.svg" alt="">
+                </div>
+                <div class="customers__logo-box">
+                    <img class="customers__logo" src="./assets/img/customers/mellanox.svg" alt="">
+                </div>
+                <div class="customers__logo-box">
+                    <img class="customers__logo" src="./assets/img/customers/microsoft.svg" alt="">
+                </div>
+                <div class="customers__logo-box">
+                    <img class="customers__logo" src="./assets/img/customers/nso.svg" alt="">
+                </div>
+                <div class="customers__logo-box">
+                    <img class="customers__logo" src="./assets/img/customers/radware.svg" alt="">
+                </div>
+                <div class="customers__logo-box">
+                    <img class="customers__logo" src="./assets/img/customers/SAP.svg" alt="">
+                </div>
+                <div class="customers__logo-box">
+                    <img class="customers__logo" src="./assets/img/customers/Western Digital.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        </section>
+        <!-- Customers Section END -->
+
+
+    <!-- Testimonials Section START -->
+    <section class="testimonials">
+
+        <!-- Slider main container -->
+<div class="swiper-container swiper-container-testimonials">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <figure class="testimonials__slide">
+                <img class="testimonials__img" 
+                src="./assets/img/customers/AudioCodes.svg" 
+                alt="">
+                <p class="testimonials__text">
+                "HackerU empowered TTNI Thailand and affiliated companies with a    tailor-made SOC-focused training program that helped changing our    approach to how we protect our data"
+                </p>
+                 <figcaption class="testimonials__title">
+                     <p class="name"> Min Yang </p>
+                     <p class="role"> Division Manager </p>
+                     <p class="company"> Ttoyota (TTNI) </p>
+                 </figcaption>
+              </figure> 
+        </div>
+        <div class="swiper-slide">
+            <figure class="testimonials__slide">
+                <img class="testimonials__img" 
+                src="./assets/img/customers/AT&T.svg" 
+                alt="">
+                <p class="testimonials__text">
+                "HackerU empowered TTNI Thailand and affiliated companies with a    tailor-made SOC-focused training program that helped changing our    approach to how we protect our data"
+                </p>
+                 <figcaption class="testimonials__title">
+                     <p class="name"> Min Yang </p>
+                     <p class="role"> Division Manager </p>
+                     <p class="company"> Ttoyota (TTNI) </p>
+                 </figcaption>
+              </figure> 
+        </div>
+        <div class="swiper-slide">
+            <figure class="testimonials__slide">
+                <img class="testimonials__img" 
+                src="./assets/img/customers/microsoft.svg" 
+                alt="">
+                <p class="testimonials__text">
+                "HackerU empowered TTNI Thailand and affiliated companies with a    tailor-made SOC-focused training program that helped changing our    approach to how we protect our data"
+                </p>
+                 <figcaption class="testimonials__title">
+                     <p class="name"> Min Yang </p>
+                     <p class="role"> Division Manager </p>
+                     <p class="company"> Ttoyota (TTNI) </p>
+                 </figcaption>
+              </figure> 
+        </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+
+</div>
+
+        
+    </section>
+    
+
+        <!-- Testimonials Section END -->
+        <section class="team">
+            <h2 class="heading"> The Team </h2>
+
+            <div class="cards">
+                <div class="card">
+                    <img class="card__img" src="./assets/img/team/chen.png" alt="">
+                    <h4 class="card__title">Chen Osipov</h4>
+                    <p class="card__sub-title">Global Operations Manager</p>
+                    <p class="card__description">
+                        Chen is an experienced Global Operations Manager with a demonstrated history of working in the education management industry.
+                    </p>
+                    <span class="card__icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                    </span>
+                </div>
+
+                <div class="card">
+                    <img class="card__img" src="./assets/img/team/inon.png" alt="">
+                    <h4 class="card__title">Chen Osipov</h4>
+                    <p class="card__sub-title">Global Operations Manager</p>
+                    <p class="card__description">
+                        Chen is an experienced Global Operations Manager with a demonstrated history of working in the education management industry.
+                    </p>
+                    <span class="card__icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                    </span>
+                </div>
+
+                <div class="card">
+                    <img class="card__img" src="./assets/img/team/moryia.png" alt="">
+                    <h4 class="card__title">Chen Osipov</h4>
+                    <p class="card__sub-title">Global Operations Manager</p>
+                    <p class="card__description">
+                        Chen is an experienced Global Operations Manager with a demonstrated history of working in the education management industry.
+                    </p>
+                    <span class="card__icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                    </span>
+                </div>
+            </div>
+
+
+
+
+<!-- CARDS MOBILE -->
+<!-- Slider main container -->
+<div class="swiper-container swiper-container-team cards-mobile">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="card">
+                <img class="card__img" src="./assets/img/team/moryia.png" alt="">
+                <h4 class="card__title">Chen Osipov</h4>
+                <p class="card__sub-title">Global Operations Manager</p>
+                <p class="card__description">
+                    Chen is an experienced Global Operations Manager with a demonstrated history of working in the education management industry.
+                </p>
+                <span class="card__icon">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                </span>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card">
+                <img class="card__img" src="./assets/img/team/inon.png" alt="">
+                <h4 class="card__title">Chen Osipov</h4>
+                <p class="card__sub-title">Global Operations Manager</p>
+                <p class="card__description">
+                    Chen is an experienced Global Operations Manager with a demonstrated history of working in the education management industry.
+                </p>
+                <span class="card__icon">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                </span>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card">
+                <img class="card__img" src="./assets/img/team/chen.png" alt="">
+                <h4 class="card__title">Chen Osipov</h4>
+                <p class="card__sub-title">Global Operations Manager</p>
+                <p class="card__description">
+                    Chen is an experienced Global Operations Manager with a demonstrated history of working in the education management industry.
+                </p>
+                <span class="card__icon">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination-team"></div>
+
+
+
+</div>
+
+</section>
+
+
+        <section class="contact">
+            <h2 class="heading">
+                Contact Us
+            </h2>
+
+            <form action="" class="form">
+                <div class="form__group">
+                    <input type="text" class="form__control" id="fullname" placeholder="Name">
+                    <label class="sr-only" for="fullname">fullname</label>
+                </div>
+                <div class="form__group">
+                    <input type="tel" class="form__control" id="phone" placeholder="Phone">
+                    <label class="sr-only" for="phone">phone</label>
+                </div>
+                <div class="form__group">
+                    <input type="email" class="form__control" id="email" placeholder="E-mail">
+                    <label class="sr-only" for="email">email</label>
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__control" id="company" placeholder="Company">
+                    <label class="sr-only" for="company">Company name</label>
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__control " id="title" placeholder="Your title">
+                    <label class="sr-only" for="company">title</label>
+                </div>
+
+            <!-- Select Box -->
+            <div class="select-box">
+                <div class="selected">
+                    <p class="selected__text">
+                        I want information about
+                    </p>
+                    <span class="selected__arrow">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-up" class="svg-inline--fa fa-chevron-up fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg>
+                    </span>
+                </div>
+
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" class="radio" name="option" id="option1">
+                        <label for="option1">Option 1</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" name="option" id="option2">
+                        <label for="option2">Option 2</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" name="option" id="option3">
+                        <label for="option3">Option 3</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" name="option" id="option4">
+                        <label for="option4">Option 4</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" name="option" id="option5">
+                        <label for="option5">Option 5</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" name="option" id="option6">
+                        <label for="option6">Option 6</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" name="option" id="option7">
+                        <label for="option7">Option 7</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Text Area -->
+            <div class="form__group form__group--textarea">
+                <textarea class="form__control" name="" placeholder="How can we help? Drop a line" id="" cols="30" rows="4" ></textarea>
+            </div>
+
+            <div class="form__group form__group--checkbox">
+                <input type="checkbox" class="check" name="check" id="check">
+                <label for="check">Yes, I agree to HackerU's Privacy Policy and to receive promotional material.</label>
+            </div>
+
+            <div class="form__group">
+                <input type="submit" name="submit" class="form__btn" value="Send">
+            </div>
+
+
+            <div class="form__contact">
+                <div class="contact-item">
+
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+
+                    <a href="mailto:Info@hackerupro.com">Info@hackerupro.com</a>
+
+
+                </div>
+                <div class="contact-item">
+
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone-alt" class="svg-inline--fa fa-phone-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path></svg>
+
+                    <a href="tel:972355558588">(972)355-558588</a>
+
+                </div>
+            </div>
+
+
+            <ul class="countries">
+                <li>Israel</li>
+                <li>Poland</li>
+                <li>USA</li>
+                <li>Russia</li>
+                <li>India</li>
+            </ul>
+          
+               
+     
+
+        </form>
+    
+        </section>
+
+
+        <footer class="footer">
+                <div class="footer__logo">
+                    <img src="./assets/img/footer/logo-white.svg" alt="">
+                </div>
+                <div class="footer__center">
+                    <ul class="list list--top">
+                        <li>
+                            <a href="#"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square" class="svg-inline--fa fa-facebook-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                        </a>
+                        </li>
+                    </ul>
+
+                    <ul class="list list--bottom">
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+
+
+                </div>
+                <div class="footer__menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+        </footer>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

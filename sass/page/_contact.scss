@@ -1,0 +1,380 @@
+.contact {
+    text-align: center;
+    padding: 8rem 0;
+    background-image: 
+    linear-gradient(to bottom, rgba(#fff, .6), transparent),
+    url(../../assets/img/contact/bg-contact.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .heading {
+        @include divider(var(--color-4));
+    }
+
+    .form {
+        max-width: 90rem;
+        margin: 3rem auto;
+        padding: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        &__group {
+            flex: 1 1 50%;
+            padding: .5rem;
+            @include respond(md) {
+            flex: 1 1 100%;
+
+            }
+
+            &--checkbox {
+                flex: 1 1 100%;
+                padding: 1.8rem .5rem;
+                text-align: left;
+                margin-left: .5rem;
+                cursor: pointer;
+
+                .check, label {
+                    cursor: pointer;
+                }
+               label {
+                   margin-left: 1rem;
+               }
+            }
+
+            &--textarea {
+                padding-top: 0;
+                width: 100%;
+                textarea {
+                    resize: none;
+                }
+            }
+        }
+
+      
+
+        &__control {
+            font-family: inherit;
+            font-size: 1.6rem;
+            color: currentColor;
+            width: 100%;
+            padding: 1.2rem 1.5rem;
+            border: 0;
+            &::placeholder {
+                color: currentColor;
+            }
+        }
+
+      
+
+// Select Box Styles
+.select-box {
+    flex: 1 1 100%;
+    text-align: left;
+    padding: .5rem;
+    padding-bottom: 0;
+
+    .selected {
+        background-color: var(--color-gray);
+        padding: 1.4rem;
+        cursor: pointer;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__text { font-weight: 700; }
+        &__arrow {
+            transition: transform .4s ease-in-out;
+            &.flip {
+                transform: rotate(-180deg);
+            }
+            svg {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+
+    .options {
+        background-color: #bbb;
+        color: var(--color-dark);
+        pointer-events: none;
+        transition: all .3s ease-in-out;
+        max-height: 0;
+        overflow-y: scroll;
+        opacity: 0;
+
+
+        &::-webkit-scrollbar {
+            background: var(--color-light);
+            border-radius: 6px 0 0 6px;
+            &-thumb {
+                background:rgb(170, 170, 170);
+                border-radius: 6px 0 0 6px;
+            }
+        }
+
+        &.active {
+            opacity: 1;
+            pointer-events: all;
+            max-height: 24rem;
+        }
+
+        .option {
+            padding: 1.2rem;
+            transition: all .3s ease-out;
+
+            &, label {
+                cursor: pointer;
+            }
+            &:hover {
+                background-color: var(--color-light);
+            }
+
+            input[type="radio"] {
+                display: none;
+            }
+
+        }
+    } 
+}
+
+&__btn {
+    width: 100%;
+    background-color: var(--color-4);
+    color: var(--color-light);
+    width: 100%;
+    padding: 1.8rem;
+    font-size: 2rem;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    font-family: inherit;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: darken($color: #F05D43, $amount: 10%);
+   
+    }
+}
+
+&__contact {
+    flex: 1 1 100%;
+    color: var(--color-7);
+
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 4rem;
+
+    @include respond(md) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        display: flex;
+
+    @include respond(md) {
+        padding: 2rem;
+        transform: scale(1.4);
+
+    }
+
+
+        a {
+            color: currentColor;
+            margin: 0 1rem;
+        }
+        svg {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}
+
+
+.countries {
+    display: flex;
+    justify-content: center;
+    color: var(--color-7);
+    width: 100%;
+    flex-wrap: wrap;
+
+    border: 2px solid currentColor;
+    border-left: 0;
+    border-right: 0;
+
+    @include respond(md) {
+        padding: 0 4rem;
+    }
+
+    li {
+        padding: 3rem;
+        font-size: 2rem;
+        font-weight: 700;
+        position: relative;
+        color: currentColor;
+
+        @include respond(md) {
+            padding: 1rem;
+            flex: 0 0 30%;
+        }
+        
+  
+        &:not(:last-child) {
+            &::after {
+               content: "";
+               background-color: currentColor;
+               display: inline-block;
+               width: 2px;
+               height: 30%;
+               position: absolute;
+               right: 0;
+               top: 50%;
+               transform: translateY(-50%);
+           }
+        }
+
+    }
+}
+
+
+
+//             &--checkbox {
+//                 padding: 2rem 0;
+//             }
+
+//             &--textarea {
+//                 padding-top: 0;
+//             }
+
+//             &--span {
+//                 flex: 1 1 100%;
+//             }
+
+//             &--contact {
+//                 display: flex;
+//                 justify-content: space-between;
+//                 color: var(--color-dark);
+//                 margin: 2.5rem 0;
+
+         
+
+//                 a {
+//                     color: currentColor;
+//                 }
+//             }
+//         }
+//         &__control {
+//             padding: 1.2rem 1.5rem;
+//             width: 100%;
+//             border: 0;
+//             font-family: inherit;
+//         }
+
+
+
+//         &__btn {
+//             background-color: var(--color-4);
+//             color: var(--color-light);
+//             width: 100%;
+//             padding: 1.2rem;
+//             font-size: 2rem;
+//             border: none;
+//             text-transform: uppercase;
+//             font-family: inherit;
+
+//         }
+
+//         &__list {
+//             flex: 1 1 100%;
+//             display: flex;
+//             justify-content: center;
+//             padding: 2rem;
+//             text-align: center;
+//             border: 2px solid var(--color-dark);
+//             border-left: 0;
+//             border-right: 0;
+//             li {
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 width: 100px;
+//                 font-weight: 700;
+                
+//                 &::after {
+//                     justify-content: center;
+//                     content: "";
+//                     background: #000;
+//                     width: 2px;
+//                     height: 50px;
+//                     transform: translateX(25px);
+//                 }
+//             }
+
+//         }
+//     }
+// }
+
+// .select-box {
+//     width: 100%;
+//     text-align: left;
+//     font-weight: 700;
+//     margin:  1rem .5rem 0 .5rem;
+//     .selected {
+//         background-color: var(--color-gray);
+//         padding: 1.4rem;
+//         cursor: pointer;
+//         z-index: 50;
+//     }
+
+//     .options {
+//         background-color: #bbb;
+//         color: var(--color-dark);
+//         opacity: 0;
+//         max-height: 0;
+//         transition: max-height .2s ease-in-out;
+//         pointer-events: none;
+
+//         &::-webkit-scrollbar {
+//             background: var(--color-light);
+//             border-radius: 6px 0 0 6px;
+            
+//             &-thumb {
+//                 background:rgb(170, 170, 170);
+//                 border-radius: 6px 0 0 6px;
+//             }
+//         }
+        
+//         &.active {
+//             overflow-y: scroll;
+//             max-height: 240px;
+//             opacity: 1;
+//             pointer-events: all;
+
+//         }
+
+//         .option, label {
+//             cursor: pointer;
+//         }
+        
+//         .option {
+//             transition: background-color .3s ease;
+//             padding: 1.2rem;
+
+//             &:hover {
+//                 background-color: #eee ;
+//             }
+           
+//         }
+      
+//     }
+
+//     .radio {
+//         display: none;
+    }
+}
+
+

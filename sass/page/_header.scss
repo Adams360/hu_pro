@@ -1,0 +1,148 @@
+.header {
+    position: relative;
+    height: 100%;
+
+    .sticker {
+        position: absolute;
+        background-color: var(--color-3);
+        z-index: 20;
+        right: 0;
+        bottom: 15rem;
+        padding: 1.2rem 4rem;
+        border-top-left-radius: 6rem;
+        border-bottom-left-radius: 6rem;
+        @include respond(md) {
+            bottom: 5rem;
+        }
+         p {
+             font-size: 2.2rem;
+         }
+    }
+    
+
+   .slide {
+        width: 100%;
+        height: 100%;
+        padding: 8rem 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 4rem 0;
+        min-height: calc(100vh - var(--partners-height) );
+
+
+        &--1 {
+            background-image: 
+            linear-gradient(to top, rgba(#000, .6) 50%, transparent),
+            url(../../assets/img/header/header1-bg--desktop.png);
+            @include respond(md) {
+                 background-image: url(../../assets/img/header/header1-bg--mobile.png);
+            }
+        }
+        &--2 {
+            background-image: 
+            linear-gradient(to top, rgba(#000, .6) 50%, transparent),
+            url(../../assets/img/header/header2-bg--desktop.png);
+            @include respond(md) {
+                 background-image: url(../../assets/img/header/header2-bg--mobile.png);
+            }
+        }
+        &--3 {
+            background-image: 
+            linear-gradient(to top, rgba(#000, .6) 50%, transparent),
+            url(../../assets/img/header/header3-bg--desktop.png);
+            @include respond(md) {
+                 background-image: url(../../assets/img/header/header3-bg--mobile.png);
+            }
+        }
+        &--3 {
+            background-image: 
+            linear-gradient(to top, rgba(#000, .6) 50%, transparent),
+            url(../../assets/img/header/header4-bg--desktop.png);
+            @include respond(md) {
+                 background-image: url(../../assets/img/header/header4-bg--mobile.png);
+            }
+        }
+
+
+       &__text {
+        padding: 4rem 0;
+        max-width: 90rem;
+        margin: 0 auto;
+
+        @include respond(sm) {
+            padding: 1rem;
+        }
+
+        
+        
+        h2 {
+            line-height: 1;
+            font-size: 8.5rem;
+            font-weight: 900;
+            max-width: 63rem;
+            letter-spacing: 1.5px;
+            margin: 0 auto;
+            white-space: nowrap;
+            font-family: $font-primary;
+            @include respond(md) {
+                font-size: 5.5rem;
+            }
+           }
+           p {
+               margin-top: 10px;
+                line-height: 1.5;
+               font-weight: 700;
+               font-size: 4rem;
+               letter-spacing: 1.2px;
+               @include respond(md) {
+                font-size: 3rem;
+            }
+
+           }
+       }
+       &__dots {
+
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 2rem;
+        @include respond(md) {
+            bottom: 85px;
+        }
+
+           .dot {
+               width: 10px;
+               height: 10px;
+               background-color: rgb(143, 143, 143);
+               display: inline-block;
+               margin: 0 5px;
+               border-radius: 50%;
+               cursor: pointer;
+               transition: background-color .2s ease-in-out;
+
+               &:hover, &--active {
+                   background-color: #fff;
+               }
+          
+           }
+       }
+   } 
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

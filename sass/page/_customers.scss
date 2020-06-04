@@ -1,0 +1,36 @@
+.customers {
+    padding: 8rem 0;
+    text-align: center;
+
+    h2 {
+        @include divider(var(--color-4));
+    }
+
+    &__logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 100rem;
+        width: 100%;
+        margin: 8rem auto 4rem;
+    }
+
+    &__logo-box {
+        flex: 1 1 15%;
+        padding: 2rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__logo {
+        max-width: 25rem;
+        width: 100%;
+        height: auto;
+
+    }
+
+
+}

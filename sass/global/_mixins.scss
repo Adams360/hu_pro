@@ -1,0 +1,38 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == xl {
+        @media only screen and (max-width: 1924px) { @content };
+    }
+
+    @if $breakpoint == lg {
+        @media only screen and (max-width: 1024px) { @content };  
+    }
+    @if $breakpoint == md {
+        @media only screen and (max-width: 768px) { @content };  
+    }
+
+    @if $breakpoint == sm {
+        @media only screen and (max-width: 576px) { @content }; 
+    }
+
+    @if $breakpoint == xs {
+        @media only screen and (max-width: 340px) { @content }; 
+    }
+}
+
+
+@mixin divider($clr, $pos: false) {
+    &::after {
+        content: "";
+        width: 8rem;
+        height: 5px;
+        display: block;
+        background-color: $clr;
+        @if $pos {
+            margin: 1.2rem 0 3rem;
+        }
+        @else {
+            margin: 1.2rem auto;
+        }
+    }
+
+}
