@@ -1,10 +1,12 @@
 // Nav Hamburger Button
 const hamburger = document.querySelector('.hamburger');
 const navMenu   = document.querySelector('.nav__menu');
+const body      = document.querySelector('body');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('is-active');
     navMenu.classList.toggle('is-active');
+    body.classList.toggle('no-scroll');
 });
 
 

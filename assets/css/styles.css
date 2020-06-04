@@ -27,7 +27,7 @@ html {
   scroll-behavior: smooth; }
   @media only screen and (max-width: 768px) {
     html {
-      font-size: 40%; } }
+      font-size: 45%; } }
 
 body {
   box-sizing: border-box;
@@ -91,6 +91,9 @@ a {
   line-height: 1.2;
   font-family: "Roboto", sans-serif;
   color: var(--color-dark); }
+  @media only screen and (max-width: 768px) {
+    .para {
+      font-size: 2rem; } }
   .para--lg {
     font-size: 4rem;
     max-width: 90rem;
@@ -876,6 +879,9 @@ a {
   margin-top: 20rem;
   width: 100%;
   overflow: visible; }
+  @media only screen and (max-width: 768px) {
+    .swiper-container-team {
+      margin-top: 12rem; } }
   .swiper-container-team .swiper-slide {
     min-height: 50rem; }
 
@@ -889,6 +895,9 @@ a {
 
 .swiper-pagination-bullet-active {
   background: #00F1DC; }
+
+.no-scroll {
+  overflow: hidden; }
 
 .header {
   position: relative;
@@ -1148,6 +1157,7 @@ a {
     align-items: center; }
   .customers__logo {
     max-width: 25rem;
+    min-width: 7rem;
     width: 100%;
     height: auto; }
 
@@ -1226,7 +1236,8 @@ a {
 .cards-mobile {
   display: none; }
   .cards-mobile .card {
-    margin: 0 auto; }
+    margin: 4rem auto;
+    max-width: 25rem; }
   .cards-mobile .swiper-wrapper {
     overflow-y: visible; }
   @media screen and (max-width: 768px) {
@@ -1234,7 +1245,7 @@ a {
       display: block; } }
 
 .testimonials {
-  padding: 4rem 0;
+  padding: 4rem;
   background: linear-gradient(to bottom, rgba(187, 187, 187, 0.2), transparent); }
   .testimonials__slide {
     text-align: center;
@@ -1292,7 +1303,7 @@ a {
     margin: 1.2rem auto; }
   .contact .form {
     max-width: 90rem;
-    margin: 3rem auto;
+    margin: 0 auto;
     padding: 3rem;
     display: flex;
     flex-wrap: wrap;
@@ -1302,7 +1313,8 @@ a {
       padding: .5rem; }
       @media only screen and (max-width: 768px) {
         .contact .form__group {
-          flex: 1 1 100%; } }
+          flex: 1 1 100%;
+          padding: 0.8rem 3px; } }
       .contact .form__group--checkbox {
         flex: 1 1 100%;
         padding: 1.8rem .5rem;
@@ -1325,6 +1337,9 @@ a {
       width: 100%;
       padding: 1.2rem 1.5rem;
       border: 0; }
+      @media only screen and (max-width: 768px) {
+        .contact .form__control {
+          padding: 2.5rem 1.5rem; } }
       .contact .form__control::placeholder {
         color: currentColor; }
     .contact .form .select-box {
@@ -1340,6 +1355,9 @@ a {
         display: flex;
         align-items: center;
         justify-content: space-between; }
+        @media only screen and (max-width: 768px) {
+          .contact .form .select-box .selected {
+            padding: 2.4rem 1.4rem; } }
         .contact .form .select-box .selected__text {
           font-weight: 700; }
         .contact .form .select-box .selected__arrow {
@@ -1389,6 +1407,9 @@ a {
       transition: all .4s ease-in-out;
       font-family: inherit;
       text-transform: uppercase; }
+      @media only screen and (max-width: 768px) {
+        .contact .form__btn {
+          padding: 2.4rem 1.4rem; } }
       .contact .form__btn:hover {
         background-color: #ec3414; }
     .contact .form__contact {

@@ -12,6 +12,10 @@
     font-family: $font-secondary;
     color: var(--color-dark);
 
+    @include respond(md) {
+        font-size: 2rem;
+    }
+
     &--lg {
         font-size: 4rem;
         max-width: 90rem;

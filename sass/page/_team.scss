@@ -88,12 +88,10 @@
 
     .cards-mobile {
         display: none;
-        .swiper-container {
-            
-        }
-
+      
         .card {
-            margin: 0 auto;
+            margin: 4rem auto;
+            max-width: 25rem;
         }
         
         .swiper-wrapper {

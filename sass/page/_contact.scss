@@ -8,13 +8,17 @@
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+
+
+
     .heading {
         @include divider(var(--color-4));
     }
 
     .form {
         max-width: 90rem;
-        margin: 3rem auto;
+        margin: 0 auto;
         padding: 3rem;
         display: flex;
         flex-wrap: wrap;
@@ -24,8 +28,8 @@
             flex: 1 1 50%;
             padding: .5rem;
             @include respond(md) {
-            flex: 1 1 100%;
-
+                flex: 1 1 100%;
+                padding: 0.8rem 3px;
             }
 
             &--checkbox {
@@ -61,6 +65,11 @@
             width: 100%;
             padding: 1.2rem 1.5rem;
             border: 0;
+
+            @include respond(md) {
+                padding: 2.5rem 1.5rem;
+            }
+
             &::placeholder {
                 color: currentColor;
             }
@@ -83,6 +92,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include respond(md) {
+        padding: 2.4rem 1.4rem;
+        }
+
         &__text { font-weight: 700; }
         &__arrow {
             transition: transform .4s ease-in-out;
@@ -153,6 +167,9 @@
     transition: all .4s ease-in-out;
     font-family: inherit;
     text-transform: uppercase;
+    @include respond(md) {
+        padding: 2.4rem 1.4rem;
+        }
 
     &:hover {
         background-color: darken($color: #F05D43, $amount: 10%);
