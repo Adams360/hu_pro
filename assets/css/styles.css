@@ -1237,7 +1237,15 @@ a {
   display: none; }
   .cards-mobile .card {
     margin: 4rem auto;
-    max-width: 25rem; }
+    max-width: 28rem; }
+    .cards-mobile .card__img {
+      max-width: 16rem; }
+    .cards-mobile .card__title {
+      font-size: 3rem; }
+    .cards-mobile .card__sub-title {
+      font-size: 2.5rem; }
+    .cards-mobile .card__description {
+      font-size: 2rem; }
   .cards-mobile .swiper-wrapper {
     overflow-y: visible; }
   @media screen and (max-width: 768px) {
