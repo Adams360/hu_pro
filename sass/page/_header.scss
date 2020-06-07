@@ -91,6 +91,9 @@
             @include respond(md) {
                 font-size: 5.5rem;
             }
+            @include respond(sm) {
+                font-size: 4.4rem;
+            }
            }
            p {
                margin-top: 10px;
