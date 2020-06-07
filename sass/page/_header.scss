@@ -7,7 +7,7 @@
         background-color: var(--color-3);
         z-index: 20;
         right: 0;
-        bottom: 15rem;
+        bottom: 50px;
         padding: 1.2rem 4rem;
         border-top-left-radius: 6rem;
         border-bottom-left-radius: 6rem;
@@ -85,9 +85,7 @@
             line-height: 1;
             font-size: 8.5rem;
             font-weight: 900;
-            max-width: 63rem;
             letter-spacing: 1.5px;
-            margin: 0 auto;
             white-space: nowrap;
             font-family: $font-primary;
             @include respond(md) {
@@ -118,9 +116,10 @@
         }
 
            .dot {
-               width: 10px;
-               height: 10px;
-               background-color: rgb(143, 143, 143);
+               width: 12px;
+               height: 12px;
+               background: transaprent;
+               border: 2px solid var(--color-light);
                display: inline-block;
                margin: 0 5px;
                border-radius: 50%;

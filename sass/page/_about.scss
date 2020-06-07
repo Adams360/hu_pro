@@ -16,7 +16,7 @@
 
     &__bottom {
         background-color: var(--color-3);
-        min-height: 34.6rem;
+        min-height: 26rem;
         text-align: center;
 
         display: flex;
@@ -51,7 +51,7 @@
         }
     }
     &__content {
-        padding: 0 6%;
+        padding: 0 16% 0 6%;
         z-index: 2;
 
         @include respond(md) {

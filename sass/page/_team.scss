@@ -99,6 +99,9 @@
         .card {
             margin: 4rem auto;
             max-width: 28rem;
+            @include respond(md) {
+                max-width: 42rem;
+            }
 
             &__img {
                 max-width: 16rem;

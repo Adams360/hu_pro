@@ -1,16 +1,71 @@
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 2rem;
+    padding: 1rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 501;
+    background-color: var(--color-7);
+    color: var(--color-light);
+
+    @include respond(md) {
+        padding: 1rem 3rem;
+
+        .left {
+            display: none;
+        }
+
+        .right {
+            margin-left: auto;
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+         a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 1rem;
+         }
+
+         span {
+             margin-left: 1rem;
+         }
+    }
+
+
+            svg {
+                width: 2rem;
+                height: 2rem;
+            }
+}
+
+
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 2rem;
+    padding: 2rem 10rem;
     min-height: 10vh;
+
     position: fixed;
-    top: 0;
+    top: 4rem;
     left: 0;
     width: 100%;
     z-index: 500;
     background: rgba(#fff, .9);
     transition: all .4s ease-out;
+
+    @include respond(lg) {
+        padding: 2rem 3rem;
+    }
 
     &.scrolled {
     background: rgba(#fff, 1);
