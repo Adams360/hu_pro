@@ -20,8 +20,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-  outline: 1px dashed red; }
+  box-sizing: inherit; }
 
 html {
   font-size: 62.5%;
