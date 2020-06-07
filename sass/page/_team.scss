@@ -47,13 +47,12 @@
             width: 100%;
             height: auto;
             margin: 0 auto;
-
             position: absolute;
             top: 0;
             transform: translateY(-50%);
         }
         &__title {
-            font-size: 2rem;
+            font-size: 2.4rem;
             text-transform: capitalize;
             font-weight: 900;
         }
@@ -84,7 +83,7 @@
             }
 
             &:hover {
-                color: var(--color-3);
+                color: var(--color-4);
                 svg {
                     transform: translateY(-1.5rem);
                 }
@@ -108,7 +107,8 @@
             }
 
             &__title {
-                font-size: 3rem;
+                font-size: 3.5rem;
+                margin-bottom: 1rem;
             }
             &__sub-title {
                 font-size: 2.5rem;

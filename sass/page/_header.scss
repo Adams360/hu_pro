@@ -7,15 +7,21 @@
         background-color: var(--color-3);
         z-index: 20;
         right: 0;
-        bottom: 50px;
+        bottom: 112px;
         padding: 1.2rem 4rem;
         border-top-left-radius: 6rem;
         border-bottom-left-radius: 6rem;
+
+        @media screen and (max-width: 1280px) and (max-height: 580px) {
+            bottom: -13px;
+        }
         @include respond(md) {
-            bottom: 5rem;
+            bottom: 4rem;
+        padding: 1.8rem 4rem;
+
         }
          p {
-             font-size: 2.2rem;
+            font-size: 2.5rem;
          }
     }
     
@@ -34,6 +40,8 @@
         justify-content: center;
         padding: 4rem 0;
         min-height: calc(100vh - var(--partners-height) );
+
+
 
 
         &--1 {
@@ -60,7 +68,7 @@
                  background-image: url(../../assets/img/header/header3-bg--mobile.png);
             }
         }
-        &--3 {
+        &--4 {
             background-image: 
             linear-gradient(to top, rgba(#000, .6) 50%, transparent),
             url(../../assets/img/header/header4-bg--desktop.png);

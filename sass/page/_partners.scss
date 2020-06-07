@@ -16,15 +16,16 @@
         flex-wrap: wrap;
         width: 100%;
         justify-content: space-around;
-        max-width: 100rem;
+        max-width: 120rem;
         @include respond(md) {
-            max-width: 45rem;
+            max-width: 58rem;
+            padding: 2rem;
         }
 
     }
 
     img {
-        max-width: 12rem;
+        max-width: 14rem;
         width: 100%;
         margin: 1rem;
     }

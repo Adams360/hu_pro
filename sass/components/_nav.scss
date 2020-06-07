@@ -42,8 +42,8 @@
 
 
             svg {
-                width: 2rem;
-                height: 2rem;
+                width: 1.5rem;
+                height: 1.5rem;
             }
 }
 
@@ -56,7 +56,7 @@
     min-height: 10vh;
 
     position: fixed;
-    top: 4rem;
+    top: 3rem;
     left: 0;
     width: 100%;
     z-index: 500;
@@ -131,20 +131,19 @@
             font-size: 2.5rem;
         }
 
-        text-shadow: -.4px -.4px 0 transparent, 
-        .4px .4px transparent;
-        transition: text-shadow .2s ease-in-out;
-
         &:hover {
-            text-shadow: -.4px -.4px 0 currentColor, 
-            .4px .4px currentColor;
+            color: var(--color-4);
         }
+
+ 
+   
     }
     .hamburger {
         z-index: 700;
         display: none;
         @include respond(md) {
             display: inline-block;
+            transform: scale(.85);
         }
     }
 }

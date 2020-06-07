@@ -1,15 +1,20 @@
 .testimonials {
-    padding: 2rem 0;
+    padding: 4rem 0;
     position: relative;
     background: linear-gradient(to bottom, rgba(#bbb, .2), transparent);
+
+    @include respond(md) {
+        padding-top: 0;
+        padding-bottom: 4rem;
+    }
 
     &__graphic {
         position: absolute;
         max-width: 30rem;
         width: 100%;
         height: auto;
-        left: 0;
-        top: 12rem;
+        left: -10px;
+        top: 0;
     }
 
     &__slide {
@@ -17,7 +22,7 @@
             max-width: 50rem;
             margin: 0 auto;
         color: var(--color-7);
-        min-height: 35rem;
+        min-height: 45rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -25,7 +30,7 @@
         padding: 0 2rem;
 
         @include respond(md) {
-        min-height: 55rem;
+        min-height: 60rem;
 
         }
 
@@ -33,7 +38,7 @@
     }
 
     &__img {
-        max-width: 15rem;
+        max-width: 30rem;
         width: 100%;
         height: auto;
         margin: 0 auto;
@@ -41,7 +46,7 @@
     }
     
     &__text {
-        padding: 2rem 0;
+        padding: 3rem;
         @include respond(md) {
             font-size: 2.2rem;
         }

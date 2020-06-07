@@ -1,5 +1,5 @@
 .experties {
-    padding: 6rem 0;
+    padding: 9rem 0 4rem 0;
     text-align: center;
 
     .heading {
@@ -11,9 +11,9 @@
         justify-content: center;
         flex-wrap: wrap;
 
-        max-width: 100rem;
+        max-width: 95rem;
         margin: 0 auto;
-        padding: 3rem;
+        padding: 2rem;
 
         
 
@@ -21,6 +21,7 @@
         &__box {
             flex: 0 0 25%;
             padding: 3rem;
+            color: var(--color-7);
             
             @include respond(md) {
                 flex: 0 0 30%;
@@ -29,7 +30,12 @@
             &:hover {
                 .icons__icon {
                     transform: translateY(-10px);
+                    color: red;
                 }
+                
+
+                
+                
 
                 .icons__text::before {
                     background: var(--color-4);
@@ -41,6 +47,9 @@
             width: 6rem;
             height:6rem;
             transition: transform .3s ease-out;
+
+            color: var(--color-gray-dark);
+            
         }
         
         &__text {
@@ -50,6 +59,13 @@
             text-align: center;
             margin: 0 auto;
             line-height: 1.2;
+            color: currentColor;
+            font-family: $font-secondary;
+            font-weight: 400;
+
+            @include respond(md) {
+                font-size: 2.2rem;
+            }
             &::before {
                 content: "";
                 display: block;

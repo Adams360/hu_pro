@@ -8,29 +8,33 @@
 
     &__logos {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         flex-wrap: wrap;
-        max-width: 100rem;
         width: 100%;
         margin-top: 3rem;
+        max-width: 150rem;
+        margin: 4rem auto;
+        @include respond(md) {
+            margin: 4rem auto;
+            margin-bottom: 0;
+
+        }
      
     }
 
-    &__logo-box {
-        flex: 0 0 150px;
-        padding: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
 
     &__logo {
-        max-width: 25rem;
-        min-width: 10rem;
         width: 100%;
         height: auto;
-
+        padding: 1rem;
+        flex: 1 1 25rem;
+        max-width: 25rem;
+        @include respond(md) {
+            padding: 1.2rem;
+            flex: 1 1 19rem;
+            max-width: 19rem;
+        }
+    
     }
 
 

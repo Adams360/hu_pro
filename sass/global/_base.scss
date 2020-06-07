@@ -9,8 +9,14 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    @include respond(lg) {
+        font-size: 58%;
+    }
     @include respond(md) {
         font-size: 40%;
+    }
+    @include respond(xs) {
+        font-size: 35%;
     }
 }
 
