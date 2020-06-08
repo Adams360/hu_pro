@@ -15,8 +15,6 @@
     --color-gray-dark: #bbb;
     // Utilities
     --partners-height: 15rem;
-    --nav-height: 10vh;
-    --topNav-height: 2rem;
     @include respond(md) {
         --partners-height: 20rem;
     }

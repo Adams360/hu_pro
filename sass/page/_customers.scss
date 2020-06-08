@@ -8,34 +8,29 @@
 
     &__logos {
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
-        width: 100%;
-        margin-top: 3rem;
-        max-width: 150rem;
-        margin: 4rem auto;
+        justify-content: center;
+        align-items: center;
+        max-width: 85%;
+        margin: 2rem auto;
         @include respond(md) {
-            margin: 4rem auto;
-            margin-bottom: 0;
-
+            max-width: 100%;
         }
+
      
     }
-
-
     &__logo {
-        width: 100%;
-        height: auto;
-        padding: 1rem;
-        flex: 1 1 25rem;
-        max-width: 25rem;
-        @include respond(md) {
-            padding: 1.2rem;
-            flex: 1 1 19rem;
-            max-width: 19rem;
-        }
-    
-    }
+        flex: 0 0 25rem;
+        padding: 2rem;
+        transition: transform .2s ease-out;
 
+        img {
+            max-width: 22rem;
+            width: 100%;
+        }
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
 
 }

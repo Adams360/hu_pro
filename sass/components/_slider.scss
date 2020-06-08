@@ -75,6 +75,9 @@
 
     #header-pagination {
     bottom: 10vh;
+    @include respond(md) {
+        bottom: 17vh;
+    }
     .swiper-pagination-bullet {
         background: transparent;
         border: 2px solid var(--color-light);
@@ -102,6 +105,9 @@
             align-items: center;
             width: 100%;
             margin: 0 auto;
+            @include respond(md) {
+                height: 60rem;
+            }
         }
         &__img {
             max-width: 13rem;
@@ -119,7 +125,7 @@
         }
 
         &__text {
-            max-width: 50rem;
+            max-width: 36rem;
             width: 100%;
             margin: 1rem auto;
             &::before {
@@ -147,6 +153,9 @@
 
         #testimonials-pagination {
             bottom: 8vh;
+            @include respond(md) {
+                bottom: 10px;
+            }
        } 
 }
 

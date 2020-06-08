@@ -74,9 +74,7 @@
                         color: var(--color-light);
                         text-decoration: underline;
                         transition: color .4 ease-in-out;
-                        &:hover {
-                            color: var(--color-3);
-                        }
+                    
                     }
                     &:first-child {
                             &::after {

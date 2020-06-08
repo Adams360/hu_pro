@@ -23,6 +23,8 @@
         max-width: 105rem;
         margin: 0 auto;
         letter-spacing: 1px;
+    color: var(--color-7);
+
         @include respond(md) {
             font-size: 3rem;
         }

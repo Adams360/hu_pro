@@ -2,11 +2,11 @@
     text-align: center;
     padding: 8rem 0;
     background-image: 
-    linear-gradient(to bottom, rgba(#fff, .6), transparent),
+    linear-gradient(to bottom, rgba(#fff, .9), transparent),
     url(../../assets/img/contact/bg-contact.png);
     @include respond(md) {
         background-image: 
-        linear-gradient(to bottom, rgba(#fff, .6), transparent),
+        linear-gradient(to bottom, rgba(#fff, .9), transparent),
         url(../../assets/img/contact/bg-contact-mobile.png);
         padding-bottom: 2rem;
     }
