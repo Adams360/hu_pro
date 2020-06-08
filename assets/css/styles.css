@@ -1051,8 +1051,8 @@ a {
   bottom: 8vh; }
 
 .team-slider {
-  overflow: visible;
-  margin: 15rem 0 5rem; }
+  margin: 15rem 0 5rem;
+  overflow: visible; }
   .team-slider .card {
     position: relative;
     background-color: var(--color-light);
@@ -1313,6 +1313,7 @@ a {
 .team {
   text-align: center;
   padding: 6rem 6%;
+  overflow: hidden;
   background-color: var(--color-gray); }
   .team .heading::after {
     content: "";

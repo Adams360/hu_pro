@@ -1,6 +1,8 @@
 .team {
     text-align: center;
     padding: 6rem 6%;
+    overflow: hidden;
+
     background-color: var(--color-gray);
     .heading {
         @include divider(var(--color-4));

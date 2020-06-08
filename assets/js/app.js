@@ -83,7 +83,7 @@ const teamSlider = new Swiper('.team-slider', {
   // init: false,\
   setWrapperSize: true,
   autoHeight: true,
-
+  watchOverflow: true,
   breakpoints: {
     640: {
       slidesPerView: 2,
