@@ -22,40 +22,6 @@ function scrollFunction() {
   }
 }
 
-
-
-
-
-
-// Header Slides Transition
-var slideIndex = 1;
-showSlides(slideIndex);
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.querySelectorAll(".slide");
-    var dots = document.querySelectorAll(".dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" dot--active", "");
-    }
-    slides[slideIndex-1].style.display = "flex";
-    dots[slideIndex-1].className += " dot--active";
-  };
-
-
 // Form Selection
 const selected = document.querySelector('.selected');
 const options  = document.querySelector('.options');
@@ -78,35 +44,55 @@ optionsList.forEach( listItem => {
 
 
 
-// SwiperJS
-var testimonialsSwiper = new Swiper ('.swiper-container-testimonials', {
+// SwiperJS Sliders
+
+const headerSlider = new Swiper ('.header-slider', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
   effect: 'fade',
   autoplay: true,
   fadeEffect: { crossFade: true },
-
-  // If we need pagination
+  // pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '#header-pagination',
+    clickable: true
   },
 
-})
-// SwiperJS
-var teamSwiper = new Swiper ('.swiper-container-team', {
+});
+
+
+const testimonialsSlider = new Swiper ('.testimonials-slider', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
   effect: 'fade',
   autoplay: true,
-  slidesPerView: 'auto',
-  spaceBetween: 30,
   fadeEffect: { crossFade: true },
-  centeredSlides: true,
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination-team',
+    el: '#testimonials-pagination',
+    clickable: true
   },
 
-})
+});
+
+const teamSlider = new Swiper('.team-slider', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // init: false,\
+  setWrapperSize: true,
+  autoHeight: true,
+
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  }
+});

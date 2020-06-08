@@ -1,0 +1,259 @@
+// Header Slider
+.header-slider {
+    position: relative;
+    user-select: none;
+    &__slide {
+        height: calc( 100vh - var(--partners-height) );
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(#000, .8), transparent);
+            z-index: 10;
+        }
+    }
+
+    &__content {
+        z-index: 50;
+        width: 100%;
+        max-width: 70rem;
+        color: var(--color-light);
+        padding-top: var(--nav-height);
+        line-height: 1;
+        font-family: $font-primary;
+        text-align: center;
+
+        .big-heading {
+            font-size: 6vmin;
+            font-weight: 700; 
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+        }
+        .sub-heading {
+            text-transform: capitalize;
+            font-weight: 400;
+            display: block;
+            font-size: 50%;
+            margin: 20px 0;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+       
+        .img-desktop { 
+            display: block; 
+            @include respond(md) {
+                display: none;
+            }
+        }
+        .img-mobile { 
+            display: none; 
+            @include respond(md) {
+                display: block;
+            }
+        }
+    }
+
+
+    #header-pagination {
+    bottom: 10vh;
+    .swiper-pagination-bullet {
+        background: transparent;
+        border: 2px solid var(--color-light);
+        width: 12px;
+        height: 12px;
+        transition: all .4s ease-in-out;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background: var(--color-light);
+    }
+    
+   } 
+}
+
+// Testimonials Slider
+.testimonials-slider {
+    &__slide {
+        text-align: center;
+        height: 55rem;
+        font-family: $font-secondary;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__img {
+            max-width: 13rem;
+            max-height: 170px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        &__text {
+            max-width: 50rem;
+            width: 100%;
+            margin: 1rem auto;
+            &::before {
+                content: "";
+                width: 8rem;
+                margin: 0 auto;
+                margin-bottom: 2rem;
+                height: 5px;
+                background-color: var(--color-4);
+                display: block;
+            }
+        }
+        &__profile {
+            display: flex;
+            justify-content: center;
+            padding: 1.8rem 0;
+            p {
+                font-weight: 900;
+                padding: 0 1rem;
+                &:not(:first-child) {
+                    border-left: 2px solid var(--color-7);
+                }
+            }
+        }
+
+        #testimonials-pagination {
+            bottom: 8vh;
+       } 
+}
+
+
+// Team Slider
+
+.team-slider {
+    overflow: visible;
+    margin: 15rem 0 5rem;
+    .card {
+        position: relative;
+        background-color: var(--color-light);
+        min-height: 46rem;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        &:hover {
+            .card__img {
+             transform: translate(-50%, -60%);
+            }
+        }
+
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: transform .2s ease-out;
+            max-width: 17rem;
+            margin: 0 auto;
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        &__content {
+            margin-top: 15rem;
+            padding: 0 6rem;
+            color: var(--color-7);
+        }
+
+        
+        &__name {
+            font-weight: 900;
+            font-size: 2.5rem;
+        }
+        &__role {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+        &__desc {
+            color: var(--color-dark);
+            font-size: 1.8rem;
+            padding-top: 2rem;
+        }
+
+        &__social {
+            position: absolute;
+            bottom: 0;
+        }
+
+            &__link {
+        color: var(--color-7);
+        &::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: currentColor;
+        }
+
+        &:hover {
+            color: var(--color-4);
+            svg {
+                transform: translateY(-10px);
+            }
+        }
+        svg {
+            width: 2.5rem;
+            height: 2.5rem;
+            transition: transform .2s ease-out;
+        }
+    }
+
+
+    }
+}
+
+
+// General Styles for SwiperJS
+
+
+
+.swiper-pagination-bullet {
+    background: transparent;
+    border: 2px solid var(--color-7);
+    width: 11px;
+    height: 11px;
+    transition: all .4s ease-in-out;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background: #00F1DC;
+}
+
+
+
+

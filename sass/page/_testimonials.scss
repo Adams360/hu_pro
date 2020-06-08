@@ -1,80 +1,18 @@
 .testimonials {
-    padding: 4rem 0;
     position: relative;
-    background: linear-gradient(to bottom, rgba(#bbb, .2), transparent);
-
-    @include respond(md) {
-        padding-top: 0;
-        padding-bottom: 4rem;
-    }
+    background: linear-gradient(180deg, #EEEEEE 0%, #EEEEEE00 100%);
 
     &__graphic {
         position: absolute;
-        max-width: 30rem;
-        width: 100%;
-        height: auto;
-        left: -10px;
-        top: 0;
-    }
+        top: 80px;
+        left: -45px;
 
-    &__slide {
-        text-align: center;
-            max-width: 50rem;
-            margin: 0 auto;
-        color: var(--color-7);
-        min-height: 45rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 2rem;
-
-        @include respond(md) {
-        min-height: 60rem;
-
-        }
-
-
-    }
-
-    &__img {
-        max-width: 30rem;
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-        display: block;
-    }
-    
-    &__text {
-        padding: 3rem;
-        @include respond(md) {
-            font-size: 2.2rem;
-        }
-        &::before {
-            content: "";
-            width: 8rem;
-            margin: 0 auto;
-            margin-bottom: 2rem;
-            height: 5px;
-            background-color: var(--color-4);
-            display: block;
+        img {
+            max-width: 40rem;
+            width: 100%;
+            height: auto;
         }
 
     }
-    &__title {
-        font-weight: 700;
-        padding: 2rem 0;
-        display: flex;
-        justify-content: center;
-        p {
-            padding: 0 .9rem;
-            @include respond(md) {
-                font-size: 1.8rem;
-            }
-            &:not(:first-child) {
-                border-left: 2px solid var(--color-7);
-            }
-        }
-    }
-    
+
 }
