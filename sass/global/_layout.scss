@@ -7,12 +7,12 @@
     margin-left: auto;
 
     @include respond(xl) {
-        max-width: 960px;
+        max-width: 1640px;
         padding-right: 2rem;
         padding-left: 2rem;
     }
     @include respond(lg) {
-        max-width: 800px;
+        max-width: 1320px;
         padding-right: 6rem;
         padding-left: 6rem;
     }

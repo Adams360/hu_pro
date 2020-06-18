@@ -1,0 +1,90 @@
+// Global Styles
+@import "./global/mixins";
+@import "./global/vars";
+@import "./global/base";
+@import "./global/layout";
+
+
+
+.thanks {
+    background-image: url(../img/thanks/bg-desktop.png);
+    @include respond(md) {
+    background-image: url(../img/thanks/bg-mobile.png);
+    }
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    &__content {
+        color: var(--color-light);
+        text-align: center;
+
+        background-color: rgba(#000, .4);
+        padding: 10rem;
+        .logo {
+            max-width: 15rem;
+            width: 100%;
+            height: auto;
+        }
+
+        @include respond(md) {
+            padding: 5rem 1rem;
+        }
+
+
+
+        h1 {
+            font-size: 12rem;
+            font-weight: 300;
+            margin: 1.5rem 0;
+            text-transform: uppercase;
+            @include respond(sm) {
+                font-size: 10rem;
+            }
+        }
+        p {
+            font-size: 4rem;
+            font-weight: 200;
+            margin: 1.5rem 0;
+
+
+        }
+
+        span {
+            font-size: 3rem;
+            display: block;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin: 2rem 0;
+            
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 6rem;
+            padding: 1rem;
+            border: 2px groove var(--color-light);
+            background-color: rgba(#fff, .1);
+            font-size: 2rem;
+            transition: background-color .4s ease-in;
+            &:hover {
+                background: transparent;
+            }
+
+            @include respond(md) {
+                font-size: 3rem;
+            }
+        }
+
+
+    }
+
+}

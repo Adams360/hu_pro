@@ -1,0 +1,15 @@
+// Global Styles
+@import "./global/mixins";
+@import "./global/vars";
+@import "./global/base";
+// @import "./global/typography";
+
+@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers";
+@import "./components/nav";
+@import "./components/btn";
+
+
+@import "./page/courses/layout";
+@import "./page/courses/menu";
+@import "./page/courses/boxes";
+

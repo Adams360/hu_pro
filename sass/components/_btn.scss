@@ -1,0 +1,25 @@
+.btn {
+    width: 100%;
+    background-color: var(--color-4);
+    color: var(--color-light);
+    padding: 1.8rem;
+    font-size: 2rem;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    font-family: inherit;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    
+    @include respond(md) {
+        padding: 2.4rem 1.4rem;
+        }
+
+    &:hover {
+        border: 2px solid var(--color-4);
+        background: rgba( var(--color-3), .4 );
+        color: var(--color-4);
+    }
+}

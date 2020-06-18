@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "node-sass ./sass/main.scss ./assets/css/styles.css -w"
+    "watch": "node-sass ./sass/main.scss ./assets/css/styles.css -w",
+    "watch:thx": "node-sass ./sass/thanks.scss ./assets/css/thx.css -w",
+    "watch:courses": "node-sass ./sass/courses.scss ./assets/css/courses.css -w"
   },
   "keywords": [],
   "author": "",
