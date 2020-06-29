@@ -79,6 +79,11 @@
                 <a href="#" class="header__btn header__btn--ghost">Request a Quote</a>
             </span>
     </div>
+
+    
+    <span class="sticker">
+        <p> All Our Courses Now Also <strong>LIVE</strong> </p>
+    </span>
 </header>
   
     <!-- Header Section END -->
@@ -104,10 +109,15 @@
         <!-- OUTLINE SECTION START -->
         <section class="outline">
        
+            
+            <div class="icon-box">
+                <img class="icon icon--mobile" src="./assets/img/syllabus/icon-outline.svg" alt="">
+
             <h3 class="heading">
                 Course Outline
             </h3>
-
+        </div>
+            
             
             <div class="outline__inner">
                 <img class="icon" src="./assets/img/syllabus/icon-outline.svg" alt="">
@@ -131,84 +141,115 @@
         </section>
     <!-- OUTLINE SECTION END -->
 
+
+    <section class="meetings-mobile">
+        <div class="meetings-mobile__inner">
+            <img src="./assets/img/syllabus/icon-meetings.svg" alt="">
+            <h3 class="heading">
+                Upcoming Meetings
+            </h3>
+        </div>
+
+        
+        <div class="meetings__date meetings__date--mobile">
+            <time datetime="2020-05-20">
+                29/05/20
+            </time>
+        </div>
+
+    </section>
+
     <!-- MODULES SECTION START -->
         <section class="modules">
 
+            <div class="icon-box">
+                <img class="icon icon--mobile" src="./assets/img/syllabus/icon-modules.svg" alt="">
+
             <h3 class="heading">
-                Modules
+                Course Outline
             </h3>
-
-            <div class="modules__top">
-                <img class="icon" src="./assets/img/syllabus/icon-modules.svg" alt="">
-
-                <nav>
-                    <ul class="modules__menu">
-                        <li><button id="module_1">Module1</button></li>
-                        <li><button id="module_2">Module2</button></li>
-                        <li><button id="module_3">Module3</button></li>
-                        <li><button id="module_4">Module4</button></li>
-                        <li><button id="module_5">Module5</button></li>
-                    </ul>
-                </nav>
-
-            </div>
-
-            <div class="modules__content" >
-                <div class="swaping-content" id="module1">
-                <h5> Introduction to Python 1 </h5>
-                <ul class="details__list">
-                    <li>Introduction to code programming</li>
-                    <li>Python installation</li>
-                    <li>PyCharm IDE installation</li>
-                    <li>Creating Project & Python Env configuration</li>
-                    <li> Basic Syntax, String Formation & code Execution</li>
-                </ul>
-            </div>
-                <div class="swaping-content" id="module2">
-                <h5> Introduction to Python 2 </h5>
-                <ul class="details__list">
-                    <li>Introduction to code programming</li>
-                    <li>PyCharm IDE installation</li>
-                    <li>Python installation</li>
-                    <li>Creating Project & Python Env configuration</li>
-                    <li> Basic Syntax, String Formation & code Execution</li>
-                </ul>
-            </div>
-                <div class="swaping-content" id="module3">
-                <h5> Introduction to Python 3 </h5>
-                <ul class="details__list">
-                    <li>Introduction to code programming</li>
-                    <li>Creating Project & Python Env configuration</li>
-                    <li>PyCharm IDE installation</li>
-                    <li>Python installation</li>
-                    <li> Basic Syntax, String Formation & code Execution</li>
-                </ul>
-            </div>
-                <div class="swaping-content" id="module4">
-                <h5> Introduction to Python 4 </h5>
-                <ul class="details__list">
-                    <li>Introduction to code programming</li>
-                    <li>Creating Project & Python Env configuration</li>
-                    <li>Python installation</li>
-                    <li> Basic Syntax, String Formation & code Execution</li>
-                    <li>PyCharm IDE installation</li>
-                </ul>
-            </div>
-                <div class="swaping-content" id="module5">
-                <h5> Introduction to Python 5 </h5>
-                <ul class="details__list">
-                    <li>Python installation</li>
-                    <li>Creating Project & Python Env configuration</li>
-                    <li>PyCharm IDE installation</li>
-                    <li> Basic Syntax, String Formation & code Execution</li>
-                    <li>Introduction to code programming</li>
-                </ul>
-            </div>
         </div>
-
             
+
+            <!-- Tabs Container -->
+            <div class="tabs">
+                <!-- Tabs Menu -->
+                
+                <div class="tabs__menu">
+                    <img class="icon" src="./assets/img/syllabus/icon-modules.svg" alt="">
+                    <button class="tabs__btn" data-for-tab="1">Module 1</button>
+                    <button class="tabs__btn" data-for-tab="2">Module 2</button>
+                    <button class="tabs__btn" data-for-tab="3">Module 3</button>
+                    <button class="tabs__btn" data-for-tab="4">Module 4</button>
+                    <button class="tabs__btn" data-for-tab="5">Module 5</button>
+                </div>
+                <!-- Tabs Content -->
+                <div class="tabs__content" data-tab="1">
+                        <h5> Introduction to python </h5>
+                        <ul class="details__list">
+                            <li>Introduction to code programming</li>
+                            <li>Python Installation</li>
+                            <li>PyCharm IDE Installation</li>
+                            <li>Creating Project & Python Env configuration</li>
+                            <li>Basic Syntax, String Formation & Code Execution</li>
+                        </ul>
+                </div>
+                <div class="tabs__content" data-tab="2">
+                    <h5> Introduction to python 2 </h5>
+                    <ul class="details__list">
+                        <li>Introduction to code programming</li>
+                        <li>Python Installation</li>
+                        <li>PyCharm IDE Installation</li>
+                        <li>Creating Project & Python Env configuration</li>
+                        <li>Basic Syntax, String Formation & Code Execution</li>
+                    </ul>
+                </div>
+                <div class="tabs__content" data-tab="3">
+                    <h5> Introduction to python 3 </h5>
+                    <ul class="details__list">
+                        <li>Introduction to code programming</li>
+                        <li>Python Installation</li>
+                        <li>PyCharm IDE Installation</li>
+                        <li>Creating Project & Python Env configuration</li>
+                        <li>Basic Syntax, String Formation & Code Execution</li>
+                    </ul>
+                </div>
+                <div class="tabs__content" data-tab="4">
+                    <h5> Introduction to python 4 </h5>
+                    <ul class="details__list">
+                        <li>Introduction to code programming</li>
+                        <li>Python Installation</li>
+                        <li>PyCharm IDE Installation</li>
+                        <li>Creating Project & Python Env configuration</li>
+                        <li>Basic Syntax, String Formation & Code Execution</li>
+                    </ul>
+                </div>
+                <div class="tabs__content" data-tab="5">
+                    <h5> Introduction to python 5 </h5>
+                    <ul class="details__list">
+                        <li>Introduction to code programming</li>
+                        <li>Python Installation</li>
+                        <li>PyCharm IDE Installation</li>
+                        <li>Creating Project & Python Env configuration</li>
+                        <li>Basic Syntax, String Formation & Code Execution</li>
+                    </ul>
+                </div>
+            </div>            
         </section>
     <!-- MODULES SECTION END -->
+
+    <div class="meetings-mobile-2">
+        <img class="icon" src="./assets/img/syllabus/icon-quote.svg" alt="">
+
+        <cite>
+            "Python is one of 
+            <strong>the most powerful programming languages</strong>
+            for ethical hacking”
+        </cite>
+
+        <a class="meetings__btn" href="#"> Download full syllabus </a>
+
+    </div>
 
     <!-- PRE SECTION START -->
         <section class="pre">
@@ -216,6 +257,8 @@
                 <img class="icon" src="./assets/img/syllabus/icon-pre.svg" alt="">
             </div>
             <div class="pre__heading">
+                <img class="icon icon--mobile" src="./assets/img/syllabus/icon-pre.svg" alt="">
+
                 <h3 class="heading">
                     Prequisitie
                 </h3>
@@ -265,14 +308,50 @@
       <!-- MEETINGS SECTION END -->
 
     </main>
-    
 </div>
 
 
 
+<section class="target">
+    <div class="container">
+        <div class="target__inner">
+            <img class="icon" src="./assets/img/syllabus/icon-target.svg" alt="">
+            <h3 class="heading"> Target Audience </h3>
+        </div>
+            <ul class="target__items">
+                <li class="target__item">
+                    <span class="target__icon">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                          </svg>
+                    </span>
+                    Students with a low level of knowledge in programming
+                </li>
+                <li class="target__item">
+                    <span class="target__icon">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                          </svg>
+                    </span>
+                    Students who are familiar with offensive & defensive Cyber Security
+                </li>
+                <li class="target__item">
+                    <span class="target__icon">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                          </svg>
+                    </span>
+                    Students who need to create automation scripts & work with related tools
+                </li>
+            </ul>
+        </div>
+</section>
+
+
+
+
+
 <!-- CONTACT US SECTION -->
-
-
 <section class="contact" id="contact">
     <h2 class="heading">
         Contact Us

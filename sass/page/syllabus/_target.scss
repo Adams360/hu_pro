@@ -1,0 +1,50 @@
+.target {
+    background-color: var(--color-3);
+    padding: 6rem 0;
+
+    &__inner {
+        margin-left: 5rem;
+        
+        
+    }
+
+    .heading {
+        @include divider(var(--color-1), true);
+        margin-left: 1rem;
+    }
+
+    .icon {
+        float: left;
+
+        @include respond(sm) {
+            display: none;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10.8rem;
+        @include respond(sm) {
+            margin-left: 4.8rem;
+        }
+    }
+    &__item {
+        max-width: 40rem;
+        display: flex;
+        padding: 1rem;
+    }
+
+    &__icon {
+        margin-right: 1rem;
+        svg {
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+        svg path {
+            fill: var(--color-1);
+        }
+    }
+
+
+}
