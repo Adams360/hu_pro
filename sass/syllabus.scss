@@ -2,23 +2,22 @@
 @import "./global/mixins";
 @import "./global/vars";
 @import "./global/base";
-@import "./global/layout";
 @import "./global/typography";
+@import "./global/layout";
 
 @import "../node_modules/hamburgers/_sass/hamburgers/hamburgers";
 @import "./components/nav";
-@import "./components/slider";
 @import "./components/btn";
 
 
+@import "./page/syllabus/header";
 @import "./page/partners";
-@import "./page/experties";
-@import "./page/about";
-@import "./page/customers";
-@import "./page/team";
-@import "./page/testimonials";
 @import "./page/contact";
+
+// Syllabus Styles
+@import "./page/syllabus/details";
+
+
 @import "./page/footer";
 
-@import "./page/courses/courses";
 

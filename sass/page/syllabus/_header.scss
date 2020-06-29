@@ -1,0 +1,88 @@
+.header {
+    position: relative;
+    height: 100%;
+    min-height: calc(92vh - var(--partners-height));
+    background-image: url(../../../assets/img/syllabus/header/header-python.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        text-align: center;
+        color: var(--color-light);
+        padding: 2rem;
+
+        h1 {
+            font-size: 7rem;
+            text-transform: uppercase;
+        }
+    }
+
+    &__text {
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .divider {
+            width: 4px;
+            height: 3rem;
+            margin: 0 3rem;
+            background: var(--color-light);
+        }
+  
+    }
+
+    &__btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+
+    @include respond(sm) {
+        margin-top: 6rem;
+        flex-direction: column;
+    }
+
+    }
+
+    &__btn {
+        font-size: 2rem;
+        border: 2px solid;
+        background-color: none;
+        border-color: transparent;
+        margin: 0 1rem;
+        padding: .8rem 1rem;
+        width: 100%;
+        transition: all .4s ease-in-out;
+
+        
+    @include respond(sm) {
+        margin: 1rem 0;
+        padding: 2rem;
+        font-size: 3rem;
+
+    }
+
+        &--full {
+            background-color: var(--color-4);
+            &:hover {
+                background-color: rgba(#F05D43, .4);
+
+                border-color: var(--color-4);
+            }
+        }
+        &--ghost {
+            border-color: var(--color-4);
+            &:hover {
+                background-color: rgba(#F05D43, .2);
+            }
+        }
+    }
+
+
+
+}

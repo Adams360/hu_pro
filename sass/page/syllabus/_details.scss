@@ -1,0 +1,228 @@
+.details {
+    @media screen and (min-width: 1025px) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "details aside"
+                             "details aside"
+                             "details aside";
+    
+    }
+
+                             padding: 4rem;
+
+// Base Specific Styles
+.heading { @include divider(var(--color-4), true) }
+
+&__list {
+    padding-top: 1.2rem;
+    li {
+        display: flex;
+        align-items: center;
+        &::before {
+            content: "";
+            background-color: var(--color-1);
+            display: inline-block;
+            width: 11px;
+            height: 1px;
+            margin-right: 1rem;
+
+        }
+    }
+}
+    
+}
+
+.icon {
+    max-width: 5rem;
+    width: 100%;
+    height: auto;
+}
+
+
+// Base Specific Styles
+
+// START OUTLINE SECTION STYLES 
+.outline {
+
+    padding: 4rem 6rem;
+    padding-left: 0;
+
+    .hiddenText {
+        display: none;
+    }
+
+    &__inner {
+        margin-left: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+    &__content {
+        padding-left: 2rem;
+        height: 10rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    &__btn {
+        margin-left: 8rem;
+        margin-top: 1.2rem;
+        background: none;
+        border: none;
+        color: var(--color-4);
+        font-weight: 700;
+        padding: .7rem 1rem;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-left: 6px;
+        }
+    }
+}
+// END OUTLINE SECTION STYLES 
+
+// START OUTLINE SECTION STYLES 
+.modules {
+    padding: 4rem 6rem;
+    padding-left: 0;
+    &__top {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    &__menu {
+        display: flex;
+        margin-left: 1rem;
+        li {
+            padding: 0 1rem;
+            display: flex;
+            justify-content: center;
+            &:not(:last-child)::after {
+                content: "";
+                height: 100%;
+                width: 1px;
+                display: inline-block;
+                background: currentColor;
+                margin-left: 2rem;
+            }
+        }
+        button {
+            color: var(--color-1);
+            font-weight: 700;
+            text-transform: uppercase;
+            appearance: none;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            padding: .8rem;
+        }
+    }
+
+    &__content {
+        padding: 2rem 8rem;
+        position: relative;
+        min-height: 15rem;
+        height: 100%;
+        h5 {
+            font-size: 1.8rem;
+            color: var(--color-4);
+        }
+    }
+
+    .swaping-content {
+        position: absolute;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;        
+    }
+
+}
+
+// END OUTLINE SECTION STYLES 
+
+
+// START PREQUISITIE SECTION STYLES 
+
+.pre {
+    display: flex;
+    padding: 4rem 6rem;
+    padding-left: 0;
+    & > * {
+        padding: .5rem;
+    }
+
+    &__content {
+        border-left: 2px solid var(--color-gray);
+        padding-left: 2rem;
+        margin-left: 2rem;
+    }
+}
+
+
+.meetings {
+    grid-area: aside;
+    background-color: var(--color-gray);
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 6rem 4rem;
+        align-items: center;
+
+
+    .heading { 
+        @include divider(var(--color-4), false); 
+        text-align: center; 
+    }
+
+    &__top {}
+    &__date {
+        text-align: center;
+        padding: 1rem;
+        time {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::before {
+                content: "";
+                background-color: var(--color-1);
+                display: inline-block;
+                width: 11px;
+                height: 1px;
+                margin-right: 1rem;
+    
+            }
+        }
+    }
+
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        color: var(--color-1);
+    }
+
+    &__btn {
+        background-color: var(--color-1);
+        padding: 1.5rem 2rem;
+        margin-top: 2rem;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+
+}
