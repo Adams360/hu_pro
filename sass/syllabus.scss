@@ -2,23 +2,11 @@
 @import "./global/mixins";
 @import "./global/vars";
 @import "./global/base";
-@import "./global/typography";
-@import "./global/layout";
 
-@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers";
-@import "./components/nav";
-@import "./components/btn";
-
-
-@import "./page/syllabus/header";
-@import "./page/partners";
-@import "./page/contact";
 
 // Syllabus Styles
+@import "./page/syllabus/header";
 @import "./page/syllabus/details";
-@import "./page/syllabus/target";
 
-
-@import "./page/footer";
 
 

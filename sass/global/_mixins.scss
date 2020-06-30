@@ -23,12 +23,12 @@
 @mixin divider($clr, $pos: false) {
     &::after {
         content: "";
-        width: 8rem;
-        height: 5px;
+        width: 6rem;
+        height: 4px;
         display: block;
         background-color: $clr;
         @if $pos {
-            margin: 1.2rem 0 3rem;
+            margin: 1rem 0 3rem;
         }
         @else {
             margin: 1.2rem auto;

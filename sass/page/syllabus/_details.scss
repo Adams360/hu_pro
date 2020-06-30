@@ -1,401 +1,234 @@
 .details {
-    @media screen and (min-width: 1025px) {
+    max-width: 144rem;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-areas: "details aside"
-        "details aside"
-        "details aside";
-        
-        padding: 4rem;
-    }
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-
-    @include respond(sm) {
-        padding: 0;
+        grid-template-areas: "content meetings"
+                             "content meetings"
+                             "content meetings";
     }
 
-// Base Specific Styles
-.heading { @include divider(var(--color-4), true) }
-
-&__list {
-    padding-top: 1.2rem;
-    li {
-        display: flex;
-        align-items: center;
-        &::before {
-            content: "";
-            background-color: var(--color-1);
-            display: inline-block;
-            width: 11px;
-            height: 1px;
-            margin-right: 1rem;
-
-        }
+    .outline {
     }
-}
-    
-}
+    .modules {
 
-.icon-box {
-    display: flex;
-    align-items: flex-start;
-@include respond(sm) {
-    padding: 4rem 0;
-}
-    .icon {
-        display: none;
-        @include respond(sm) {
-            display: block;
-            margin-right: 3rem;
-        }
-    }
+        .tabs {
+            &__menu {
+                display: flex;
+                padding: .5rem;
+          
+                
+            }
+            &__btn {
+                cursor: pointer;
+                border: none;
+                appearance: none;
+                outline: none;
+                background: none;
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                white-space: nowrap;
+                transition: color .2s ease-in-out;
+                &:not(:first-child) {
+                    margin-left: 2rem;
+                    padding-left: .5rem;
+                    &:before {
+                        content: "|";
+                        margin-right: 2rem;
+                        color: var(--color-1);
+                    }
+                }
 
-  
-}
-
-.icon {
-    max-width: 5rem;
-    width: 100%;
-    height: auto;
-
-    &--mobile {
-        float: left;
-        max-width: 9rem;
-    }
-}
-
-
-// Base Specific Styles
-
-// START OUTLINE SECTION STYLES 
-.outline {
-
-    padding: 4rem 6rem;
-    padding-left: 0;
-
-    @include respond(sm) {
-        padding: 2rem;
-        padding-top: 6rem;
-    }
-
-
-    .hiddenText {
-        display: none;
-    }
-
-    &__inner {
-        margin-left: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        @include respond(sm) {
-            margin-left: 0;
-            margin-top: 2rem;
-            .icon {
+                &--active {
+                    color: var(--color-4);
+                }
+            }
+            &__content {
+                padding: 15px;
+                font-size: 1.8rem;
                 display: none;
-            }
-        }
-      
 
-    }
-    &__content {
-        padding-left: 2rem;
-        height: 10rem;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
-
-    &__btn {
-        margin-left: 8rem;
-        margin-top: 1.2rem;
-        background: none;
-        border: none;
-        color: var(--color-4);
-        font-weight: 700;
-        padding: .7rem 1rem;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-
-        svg {
-            width: 1.5rem;
-            height: 1.5rem;
-            margin-left: 6px;
-        }
-
-        @include respond(sm) {
-            margin-left: 0;
-            padding-top: 1rem;
-        
-        }
-    }
-}
-// END OUTLINE SECTION STYLES 
-
-// START OUTLINE SECTION STYLES 
-.modules {
-    padding: 4rem 6rem;
-    padding-left: 0;
-
-    @include respond(sm) {
-        padding: 2rem;
-        padding-top: 6rem;
-    }
-
-  
-    .tabs {
-        &__menu {
-            display: flex;
-            margin-left: .8rem;
-            @include respond(sm) {
-                overflow-x: scroll;
-                 overflow-y: hidden;
-                 max-width: 51rem;
-                 width: 100%;
-                 margin-left: 0;
-                  margin: 1rem 0;
-
-            }
-
-            .icon {
-                margin-right: 2rem;
-                @include respond(sm) {
-                    display: none;
+                &--active {
+                    display: block;
                 }
             }
         }
 
-        &__btn {
-            display: block;
-            padding: 1rem 2rem;
-            background: none;
-            appearance: none;
-            outline: none;
-            border: none;
-            cursor: pointer;
-            font-weight: 700;
-            color: var(--color-1);
-            transition: all .2s ease-in-out;
-            font-size: 1.6rem;
-            font-family: inherit;
-            text-transform: uppercase;
-            text-align: center;
-            white-space: nowrap;
-            
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
-            &:not(:last-child)::after {
-                content: "";
-                background-color: var(--color-1);
-                display: inline-block;
-                width: 1px;
-                height: 30px;
-                margin-left: 3rem;
-                
-            }
-            
-            &--active {
-                color: var(--color-4);
-            }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    .pre {
+        display: flex;
+        flex-wrap: wrap;
+        @include respond(md) {
+            flex-direction: column;
         }
 
-        &__content {
-            padding: 2rem;
-            font-size: 2rem;
-            display: none;
-            margin-left: 7rem;
-            margin-top: 2rem;
 
-            @include respond(sm) {
-                margin-left: 0;
-                padding-right: 5%;
-            }
-
-            h5 {
-                color: var(--color-4);
-            }
-
-
-            &--active {
-                display: block;
+        ul {
+            flex: 1;
+            padding-left: 2rem;
+            @media screen and (min-width: 768px) {
+                &::before {
+                    content: "";
+                    width: 3px;
+                    height: 100%;
+                    background-color: var(--color-gray);
+                    float: left;
+                    margin-right: 2rem;
+                }
             }
         }
     }
-
-}
-
-// END OUTLINE SECTION STYLES 
-
-
-// START PREQUISITIE SECTION STYLES 
-
-.pre {
-    display: flex;
-    padding: 4rem 6rem;
-    padding-left: 0;
-
-    @include respond(sm) {
-        padding: 7rem 0;
-        flex-direction: column;
-        &__icon {
-            display: none;
-        }
-
-        &__heading {
-            .icon {
-                margin-right: 2rem;
-            }
-        }
-    }
-    & > * {
-        padding: .5rem;
-    }
-
-    &__content {
-        border-left: 2px solid var(--color-gray);
-        padding-left: 2rem;
-        margin-left: 2rem;
-        @include respond(sm) {
-            padding: 0;
-            border-left: none;
-        }
-    }
-}
-
-
-.meetings {
-    grid-area: aside;
-    background-color: var(--color-gray);
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 6rem 4rem;
-        align-items: center;
-
-        @include respond(sm) {
-            display: none;
-        }
-
-
-    .heading { 
-        @include divider(var(--color-4), false); 
-        text-align: center; 
-    }
-
-    &__date {
+    .meetings {
+        grid-area: meetings;
         text-align: center;
-        padding: 1rem;
+        background: var(--color-gray);
+
+        display: flex;
+        flex-direction: column;
+
+        .heading {
+            @include divider( var(--color-4), false );
+        }
+
+        &__dates {
+            display: flex;
+            flex-direction: column;
+            time {
+                padding: 1rem;
+            }
+        }
+
+        @include respond(md) {
+            display: none;
+        }
+   
+    }
+
+    .meetings-half {
+        background-color: var(--color-gray);
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    .quote-box {
+        text-align: center;
+        color: var(--color-1);
+        margin-top: auto;
 
         &--mobile {
-            text-align: left;
-
-            time {
-                justify-content: flex-start !important;
-            }
-        }
-        time {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            &::before {
-                content: "";
-                background-color: var(--color-1);
-                display: inline-block;
-                width: 11px;
-                height: 1px;
-                margin-right: 1rem;
-    
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        a {
+            display: block;
+        }
+    }
+}
+// General Styles
+
+ul {
+    li {
+        display: flex;
+        &::before {
+            content: "-";
+            margin-right: 5px;
+        }
+    }
+}
+
+.hiddenText {
+    display: none;
+}
+
+section {
+    padding: 4rem 2rem;
+    position: relative;
+    .heading {
+        font-size: 2.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: inline-block;
+        font-family: $font-primary;
+        color: var(--color-1);
+        @include divider( var(--color-4), true );
+    }
+}
+.icon-box {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+
+    &--static {
+        flex-direction: row;
+    }
+
+    &--center {
+        align-items: center;
+    }
+    @include respond(md) {
+        flex-direction: row;
+    }
+    .icon {
+        max-width: 5rem;
+        width: 100%;
+        height: auto;
+        @include respond(md) {
+            max-width: 7rem;
+            margin-right: 1rem;
+            margin-top: -5px;
+        }
+
+        &--responsive {
+            @media screen and (min-width: 768px) {
+                position: absolute;
+                top: 105px;
+                left: 25px;
             }
         }
     }
+}
 
+.content-box {
+    h5 {
+        color: var(--color-4);
+    }
 
-    &__content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
+    p {
         color: var(--color-1);
     }
 
-    &__btn {
-        background-color: var(--color-1);
-        padding: 1.5rem 2rem;
-        margin-top: 2rem;
-        width: 100%;
-        text-transform: uppercase;
-        font-size: 1.8rem;
-    }
-
-}
-
-
-
-
-.meetings-mobile {
-padding: 4rem;
-position: relative;
-display: none;
-@include respond(sm) {
-    display: block;
-}
-&::before {
-    content: "";
-    background: var(--color-gray);
-    position: absolute;
-    top: 0;
-    left: -30px;
-    display: block;
-    z-index: -1;
-    width: 100vw;
-    height: 30rem;
-}
-
-    &__inner {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        max-width: 40rem;
-
-        .heading {
-            margin-left: 2rem;
-        }
+    @media screen and (min-width: 768px) {
+        margin-left: 8rem;
+        margin-top: -1rem;
+        max-width: 70rem;
     }
 }
 
 
-.meetings-mobile-2 {
-    display: none;
-    position: relative;
-    padding: 4rem;
-    &::before {
-        content: "";
-        background: var(--color-gray);
-        position: absolute;
-        top: 0;
-        left: -30px;
-        display: block;
-        z-index: -1;
-        width: 100vw;
-        height: 28rem;
-    }
 
-    @include respond(sm) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-}

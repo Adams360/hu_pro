@@ -1,9 +1,8 @@
-const readMoreBtn = document.querySelector('.outline__btn');
+const readMoreBtn = document.querySelector('.readMoreBtn');
 const hiddenText = document.querySelector('.hiddenText');
 readMoreBtn.addEventListener('click', () => {
     hiddenText.classList.toggle('hiddenText');
 });
-
 
 
 
@@ -25,8 +24,6 @@ function setupTabs() {
 
                     btn.classList.add('tabs__btn--active');
                     tabToActivate.classList.add('tabs__content--active');
-
-
              });
          })
 
