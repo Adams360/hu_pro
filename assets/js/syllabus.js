@@ -1,4 +1,4 @@
-const readMoreBtn = document.querySelector('.readMoreBtn');
+const readMoreBtn = document.querySelector('.outline__btn');
 const hiddenText = document.querySelector('.hiddenText');
 readMoreBtn.addEventListener('click', () => {
     hiddenText.classList.toggle('hiddenText');

@@ -17,7 +17,8 @@
         margin-top: 5rem;
         margin-left: 10%;
         margin-bottom: 4rem;
-        display: none;
+        opacity: 0;
+        margin-top: 20rem;
         ul {
             display: flex;
         }
@@ -36,6 +37,9 @@
         margin-top: auto;
         order: 1;
         color: var(--color-light);
+        @include respond(md) {
+            padding: 0px 2rem;
+        }
 
         .course-heading {
             font-size: 7rem;
@@ -65,46 +69,10 @@
         @include respond(sm) {
             flex-direction: column;
             margin-bottom: 4rem;
+            max-width: 50rem;
         }
     }
 
-
-    // &__content {
-    //     text-align: center;
-    //     color: var(--color-light);
-    //     .course-heading {
-    //         font-size: 7rem;
-    //         text-transform: uppercase;
-    //     }
-
-    // }
-
-    // &__layout {
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-    //     width: 100%;
-    // }
-
-    // &__inner {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     text-align: center;
-    //     max-width: 50rem;
-    //     margin: 0 auto;
-    //     padding: 1rem;
-    //     font-size: 4rem;
-    //     .divider {
-    //         margin: 0 2rem;
-    //     }
-    // }
-
-    // &__btns {
-    //     margin: 3rem auto;
-    //     text-align: center;
-    // }
 
     &__btn {
         margin: 0 1rem;
@@ -158,6 +126,8 @@
             order: 1;
             margin-top: 3rem;
             margin-bottom: 1rem;
+            padding: 2.4rem 4rem;
+
             
         }
     }

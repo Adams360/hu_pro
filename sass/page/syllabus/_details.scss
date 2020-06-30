@@ -9,7 +9,35 @@
                              "content meetings";
     }
 
+    ul {
+        li {
+            display: flex;
+            &::before {
+                content: "-";
+                margin-right: 5px;
+            }
+        }
+    }
+
     .outline {
+        &__btn {
+            background: none;
+            border: none;
+            color: var(--color-4);
+            padding: 1rem;
+            margin-top: 2rem;
+            margin-left: -1rem;
+            cursor: pointer;
+            outline: none;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+                margin-left: .5rem;
+                margin-top: 3px;
+            }
+        }
     }
     .modules {
 
@@ -17,8 +45,13 @@
             &__menu {
                 display: flex;
                 padding: .5rem;
-          
-                
+
+                @include respond(sm) {
+                    padding: 2rem;
+                    overflow-x: scroll;
+                    overflow-y: hidden;
+                    width: 100%;
+                }
             }
             &__btn {
                 cursor: pointer;
@@ -44,37 +77,48 @@
                 &--active {
                     color: var(--color-4);
                 }
+
+                @include respond(sm) {
+                    font-size: 2.5rem;
+                    padding: 2rem;
+                }
             }
+
+
             &__content {
                 padding: 15px;
                 font-size: 1.8rem;
                 display: none;
+
+                h5 {
+                    font-size: 2rem;
+                    @include respond(sm) {
+                        font-size: 3.5rem;
+                    }
+                }
+
+                ul {
+                    margin-top: 1rem;
+                    li {
+                        @include respond(sm) {
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
 
                 &--active {
                     display: block;
                 }
             }
         }
-
-
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
     .pre {
         display: flex;
         flex-wrap: wrap;
+        .heading {
+            margin-left: 1rem;
+            }
         @include respond(md) {
             flex-direction: column;
         }
@@ -99,9 +143,9 @@
         grid-area: meetings;
         text-align: center;
         background: var(--color-gray);
-
         display: flex;
         flex-direction: column;
+        padding: 6rem;
 
         .heading {
             @include divider( var(--color-4), false );
@@ -112,12 +156,16 @@
             flex-direction: column;
             time {
                 padding: 1rem;
+                &:before {
+                    content: "-";
+                }
             }
         }
 
         @include respond(md) {
             display: none;
         }
+        
    
     }
 
@@ -126,40 +174,65 @@
         @media screen and (min-width: 768px) {
             display: none;
         }
+
+        cite {
+            font-size: 3rem;
+        }
+
+    
+
+        .meetings__dates {
+            time {
+                font-size: 2.5rem;
+                color: var(--color-1);
+            } 
+        }
+        
     }
 
-    .quote-box {
-        text-align: center;
-        color: var(--color-1);
-        margin-top: auto;
 
-        &--mobile {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        img {
-            display: block;
-            margin: 0 auto;
-        }
-
-        a {
-            display: block;
-        }
-    }
 }
 // General Styles
 
-ul {
-    li {
-        display: flex;
-        &::before {
-            content: "-";
-            margin-right: 5px;
-        }
+.quote-box {
+    text-align: center;
+    color: var(--color-1);
+    margin-top: auto;
+
+    cite {
+        font-size: 1.8rem;
+        font-style: normal;
+        font-family: $font-secondary;
+        display: block;
     }
+
+        
+    .quote-btn {
+        background-color: var(--color-1);
+        padding: 1.2rem;
+        font-size: 2rem;
+        margin-top: 4rem;
+        display: block;
+        appearance: none;
+        border: none;
+        outline: none;
+        transition: all .2s ease-in-out;
+        border: 2px solid transparent;
+        &:hover {
+            background-color: transparent;
+            border-color:  var(--color-1);
+            color: var(--color-1);
+        }
+
+        @include respond(sm) {
+            font-size: 2.4rem;
+        }
+
+    }
+
+
+
+
 }
 
 .hiddenText {
@@ -167,8 +240,11 @@ ul {
 }
 
 section {
-    padding: 4rem 2rem;
     position: relative;
+    padding: 4rem 2rem;
+    @include respond(sm) {
+        padding: 4rem 5rem;
+    }
     .heading {
         font-size: 2.6rem;
         font-weight: 700;
@@ -177,6 +253,9 @@ section {
         font-family: $font-primary;
         color: var(--color-1);
         @include divider( var(--color-4), true );
+        @include respond(sm) {
+            font-size: 3.2rem;
+        }
     }
 }
 .icon-box {
@@ -193,15 +272,16 @@ section {
     }
     @include respond(md) {
         flex-direction: row;
+        align-items: center;
     }
     .icon {
-        max-width: 5rem;
-        width: 100%;
-        height: auto;
+        width: 5rem;
+        height: 5rem;
         @include respond(md) {
-            max-width: 7rem;
-            margin-right: 1rem;
-            margin-top: -5px;
+            width: 8rem;
+            height: 8rem;
+            margin-right: 2rem;
+            margin-top: -3rem;
         }
 
         &--responsive {

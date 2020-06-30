@@ -1,50 +1,57 @@
 .target {
     background-color: var(--color-3);
     padding: 6rem 0;
-
+    @include respond(sm) {
+        padding: 1rem 0;
+    }
     &__inner {
-        margin-left: 5rem;
-        
-        
+        max-width: 144rem;
+        margin: 0 auto;
+        padding: 4rem 2rem;
     }
 
     .heading {
-        @include divider(var(--color-1), true);
+        @include divider( var(--color-1), true);
         margin-left: 1rem;
     }
 
-    .icon {
-        float: left;
-
-        @include respond(sm) {
-            display: none;
-        }
-    }
-
-    &__items {
+    &__content {
         display: flex;
-        flex-wrap: wrap;
-        margin-left: 10.8rem;
-        @include respond(sm) {
-            margin-left: 4.8rem;
+        text-align: left;
+        justify-content: center;
+        margin-left: 6rem;
+
+        @include respond(md) {
+            flex-direction: column;
+            margin-top: 2rem;
         }
-    }
-    &__item {
-        max-width: 40rem;
-        display: flex;
-        padding: 1rem;
+
+        li {
+            display: flex;
+            justify-content: center;
+            max-width: 40rem;
+            margin-right: auto;
+            font-size: 2rem;
+            @include respond(sm) {
+                font-size: 2.5rem;
+                margin: 1rem 0;
+            max-width: 45rem;
+
+            }
+            .icon {
+                margin-right: 1.2rem;
+                path {
+                    fill: var(--color-1);
+                }
+            }
+        }
+        
     }
 
-    &__icon {
-        margin-right: 1rem;
-        svg {
-            width: 1.8rem;
-            height: 1.8rem;
-        }
-        svg path {
-            fill: var(--color-1);
-        }
-    }
 
+
+
+
+  
 
 }

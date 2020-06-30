@@ -4,9 +4,16 @@
 @import "./global/base";
 
 
+@import "./components/nav";
+
+@import "./page/partners";
 // Syllabus Styles
 @import "./page/syllabus/header";
 @import "./page/syllabus/details";
+@import "./page/syllabus/target";
+// // Syllabus Styles End
+@import "./page/contact";
+@import "./page/footer";
 
 
 
